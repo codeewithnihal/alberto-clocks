@@ -2,12 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alberto Clocks</title>
+    <title>Alberto Watch Company</title>
+    <meta
+      name="description"
+      content="Alberto Watch Company – six watch collections: luxury, vintage, chronograph, smart, women’s and sports."
+    />
+    <meta name="theme-color" content="#111111" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./brand/favicon-64.png" />
+    <link rel="apple-touch-icon" href="./brand/apple-touch-icon.png" />
+    <!-- Apply the saved theme before first paint to avoid a light flash. Light (white) is the default. -->
+    <script>
+      try {
+        var saved = localStorage.getItem("alberto.theme");
+        document.documentElement.classList.toggle("dark", saved === "dark");
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>Alberto Watch Company needs JavaScript to show the catalogue.</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

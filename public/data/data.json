@@ -1,0 +1,4269 @@
+{
+ "brand": "Alberto Watches",
+ "currency": "USD",
+ "note": "Demo catalogue: prices and specifications are placeholders for website development and must be verified before production use.",
+ "categories": [
+  {
+   "id": "luxury",
+   "name": "Luxury Watches",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "cover": {
+    "src": "images/covers/luxury.png",
+    "large": "images/covers/luxury-md.webp",
+    "thumb": "images/covers/luxury-sm.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "productIds": [
+    "luxury-001",
+    "luxury-002",
+    "luxury-003",
+    "luxury-004",
+    "luxury-005",
+    "luxury-006",
+    "luxury-007",
+    "luxury-008",
+    "luxury-009",
+    "luxury-010",
+    "luxury-011",
+    "luxury-012"
+   ]
+  },
+  {
+   "id": "vintage",
+   "name": "Vintage Watches",
+   "description": "Classic-inspired styling with timeless details.",
+   "cover": {
+    "src": "images/covers/vintage.jpg",
+    "large": "images/covers/vintage-md.webp",
+    "thumb": "images/covers/vintage-sm.webp",
+    "width": 2048,
+    "height": 1152
+   },
+   "productIds": [
+    "vintage-001",
+    "vintage-002",
+    "vintage-003",
+    "vintage-004",
+    "vintage-005",
+    "vintage-006",
+    "vintage-007",
+    "vintage-008",
+    "vintage-009",
+    "vintage-010",
+    "vintage-011",
+    "vintage-012"
+   ]
+  },
+  {
+   "id": "chronograph",
+   "name": "Chronograph Watches",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "cover": {
+    "src": "images/covers/chronograph.png",
+    "large": "images/covers/chronograph-md.png",
+    "thumb": "images/covers/chronograph-sm.png",
+    "width": 1672,
+    "height": 940
+   },
+   "productIds": [
+    "chronograph-001",
+    "chronograph-002",
+    "chronograph-003",
+    "chronograph-004",
+    "chronograph-005",
+    "chronograph-006",
+    "chronograph-007",
+    "chronograph-008",
+    "chronograph-009",
+    "chronograph-010",
+    "chronograph-011",
+    "chronograph-012"
+   ]
+  },
+  {
+   "id": "smart",
+   "name": "Smart Watches",
+   "description": "Modern wearable styling for connected daily routines.",
+   "cover": {
+    "src": "images/covers/smart.jpg",
+    "large": "images/covers/smart-md.webp",
+    "thumb": "images/covers/smart-sm.webp",
+    "width": 2096,
+    "height": 1184
+   },
+   "productIds": [
+    "smart-001",
+    "smart-002",
+    "smart-003",
+    "smart-004",
+    "smart-005",
+    "smart-006",
+    "smart-007",
+    "smart-008",
+    "smart-009",
+    "smart-010",
+    "smart-011",
+    "smart-012"
+   ]
+  },
+  {
+   "id": "sports",
+   "name": "Sports Watches",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "cover": {
+    "src": "images/covers/sports.jpg",
+    "large": "images/covers/sports-md.webp",
+    "thumb": "images/covers/sports-sm.webp",
+    "width": 2096,
+    "height": 1184
+   },
+   "productIds": [
+    "sports-001",
+    "sports-002",
+    "sports-003",
+    "sports-004",
+    "sports-005",
+    "sports-006",
+    "sports-007",
+    "sports-008",
+    "sports-009",
+    "sports-010",
+    "sports-011",
+    "sports-012"
+   ]
+  },
+  {
+   "id": "womens",
+   "name": "Women’s Watches",
+   "description": "Elegant proportions with polished, delicate finishes.",
+   "cover": {
+    "src": "images/covers/womens.jpg",
+    "large": "images/covers/womens-md.webp",
+    "thumb": "images/covers/womens-sm.webp",
+    "width": 2048,
+    "height": 1152
+   },
+   "productIds": [
+    "womens-001",
+    "womens-002",
+    "womens-003",
+    "womens-004",
+    "womens-005",
+    "womens-006",
+    "womens-007",
+    "womens-008",
+    "womens-009",
+    "womens-010",
+    "womens-011",
+    "womens-012"
+   ]
+  }
+ ],
+ "products": [
+  {
+   "id": "luxury-001",
+   "categoryId": "luxury",
+   "name": "Luxury 01",
+   "sourceName": "Luxury Product Image No 1",
+   "brand": "Alberto",
+   "price": 299,
+   "currency": "USD",
+   "modelNumber": "LUXURY-001",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-001/1.png",
+     "large": "images/products/luxury-001/1.png",
+     "thumb": "images/products/luxury-001/1-sm.webp",
+     "width": 498,
+     "height": 540
+    },
+    {
+     "src": "images/products/luxury-001/2.png",
+     "large": "images/products/luxury-001/2.png",
+     "thumb": "images/products/luxury-001/2-sm.webp",
+     "width": 518,
+     "height": 540
+    },
+    {
+     "src": "images/products/luxury-001/3.png",
+     "large": "images/products/luxury-001/3.png",
+     "thumb": "images/products/luxury-001/3-sm.webp",
+     "width": 496,
+     "height": 540
+    },
+    {
+     "src": "images/products/luxury-001/4.png",
+     "large": "images/products/luxury-001/4.png",
+     "thumb": "images/products/luxury-001/4-sm.webp",
+     "width": 761,
+     "height": 471
+    },
+    {
+     "src": "images/products/luxury-001/5.png",
+     "large": "images/products/luxury-001/5.png",
+     "thumb": "images/products/luxury-001/5-sm.webp",
+     "width": 765,
+     "height": 471
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-002",
+   "categoryId": "luxury",
+   "name": "Luxury 02",
+   "sourceName": "Luxury Product Image No 2",
+   "brand": "Alberto",
+   "price": 354,
+   "currency": "USD",
+   "modelNumber": "LUXURY-002",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-002/1.png",
+     "large": "images/products/luxury-002/1.png",
+     "thumb": "images/products/luxury-002/1-sm.webp",
+     "width": 502,
+     "height": 523
+    },
+    {
+     "src": "images/products/luxury-002/2.png",
+     "large": "images/products/luxury-002/2.png",
+     "thumb": "images/products/luxury-002/2-sm.webp",
+     "width": 509,
+     "height": 523
+    },
+    {
+     "src": "images/products/luxury-002/3.png",
+     "large": "images/products/luxury-002/3.png",
+     "thumb": "images/products/luxury-002/3-sm.webp",
+     "width": 499,
+     "height": 523
+    },
+    {
+     "src": "images/products/luxury-002/4.png",
+     "large": "images/products/luxury-002/4.png",
+     "thumb": "images/products/luxury-002/4-sm.webp",
+     "width": 762,
+     "height": 489
+    },
+    {
+     "src": "images/products/luxury-002/5.png",
+     "large": "images/products/luxury-002/5.png",
+     "thumb": "images/products/luxury-002/5-sm.webp",
+     "width": 761,
+     "height": 489
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-003",
+   "categoryId": "luxury",
+   "name": "Luxury 03",
+   "sourceName": "Luxury Product Image No 3",
+   "brand": "Alberto",
+   "price": 409,
+   "currency": "USD",
+   "modelNumber": "LUXURY-003",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-003/1.png",
+     "large": "images/products/luxury-003/1.png",
+     "thumb": "images/products/luxury-003/1-sm.webp",
+     "width": 484,
+     "height": 527
+    },
+    {
+     "src": "images/products/luxury-003/2.png",
+     "large": "images/products/luxury-003/2.png",
+     "thumb": "images/products/luxury-003/2-sm.webp",
+     "width": 522,
+     "height": 527
+    },
+    {
+     "src": "images/products/luxury-003/3.png",
+     "large": "images/products/luxury-003/3.png",
+     "thumb": "images/products/luxury-003/3-sm.webp",
+     "width": 504,
+     "height": 527
+    },
+    {
+     "src": "images/products/luxury-003/4.png",
+     "large": "images/products/luxury-003/4.png",
+     "thumb": "images/products/luxury-003/4-sm.webp",
+     "width": 759,
+     "height": 484
+    },
+    {
+     "src": "images/products/luxury-003/5.png",
+     "large": "images/products/luxury-003/5.png",
+     "thumb": "images/products/luxury-003/5-sm.webp",
+     "width": 764,
+     "height": 484
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-004",
+   "categoryId": "luxury",
+   "name": "Luxury 04",
+   "sourceName": "Luxury Product Image 4",
+   "brand": "Alberto",
+   "price": 464,
+   "currency": "USD",
+   "modelNumber": "LUXURY-004",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-004/1.png",
+     "large": "images/products/luxury-004/1.png",
+     "thumb": "images/products/luxury-004/1-sm.webp",
+     "width": 483,
+     "height": 532
+    },
+    {
+     "src": "images/products/luxury-004/2.png",
+     "large": "images/products/luxury-004/2.png",
+     "thumb": "images/products/luxury-004/2-sm.webp",
+     "width": 529,
+     "height": 532
+    },
+    {
+     "src": "images/products/luxury-004/3.png",
+     "large": "images/products/luxury-004/3.png",
+     "thumb": "images/products/luxury-004/3-sm.webp",
+     "width": 499,
+     "height": 532
+    },
+    {
+     "src": "images/products/luxury-004/4.png",
+     "large": "images/products/luxury-004/4.png",
+     "thumb": "images/products/luxury-004/4-sm.webp",
+     "width": 756,
+     "height": 480
+    },
+    {
+     "src": "images/products/luxury-004/5.png",
+     "large": "images/products/luxury-004/5.png",
+     "thumb": "images/products/luxury-004/5-sm.webp",
+     "width": 767,
+     "height": 480
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-005",
+   "categoryId": "luxury",
+   "name": "Luxury 05",
+   "sourceName": "Luxury Product Image 5",
+   "brand": "Alberto",
+   "price": 519,
+   "currency": "USD",
+   "modelNumber": "LUXURY-005",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-005/1.png",
+     "large": "images/products/luxury-005/1.png",
+     "thumb": "images/products/luxury-005/1-sm.webp",
+     "width": 509,
+     "height": 527
+    },
+    {
+     "src": "images/products/luxury-005/2.png",
+     "large": "images/products/luxury-005/2.png",
+     "thumb": "images/products/luxury-005/2-sm.webp",
+     "width": 508,
+     "height": 527
+    },
+    {
+     "src": "images/products/luxury-005/3.png",
+     "large": "images/products/luxury-005/3.png",
+     "thumb": "images/products/luxury-005/3-sm.webp",
+     "width": 496,
+     "height": 527
+    },
+    {
+     "src": "images/products/luxury-005/4.png",
+     "large": "images/products/luxury-005/4.png",
+     "thumb": "images/products/luxury-005/4-sm.webp",
+     "width": 751,
+     "height": 485
+    },
+    {
+     "src": "images/products/luxury-005/5.png",
+     "large": "images/products/luxury-005/5.png",
+     "thumb": "images/products/luxury-005/5-sm.webp",
+     "width": 773,
+     "height": 485
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-006",
+   "categoryId": "luxury",
+   "name": "Luxury 06",
+   "sourceName": "Luxury Product Image 6",
+   "brand": "Alberto",
+   "price": 574,
+   "currency": "USD",
+   "modelNumber": "LUXURY-006",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-006/1.png",
+     "large": "images/products/luxury-006/1.png",
+     "thumb": "images/products/luxury-006/1-sm.webp",
+     "width": 500,
+     "height": 538
+    },
+    {
+     "src": "images/products/luxury-006/2.png",
+     "large": "images/products/luxury-006/2.png",
+     "thumb": "images/products/luxury-006/2-sm.webp",
+     "width": 523,
+     "height": 538
+    },
+    {
+     "src": "images/products/luxury-006/3.png",
+     "large": "images/products/luxury-006/3.png",
+     "thumb": "images/products/luxury-006/3-sm.webp",
+     "width": 489,
+     "height": 538
+    },
+    {
+     "src": "images/products/luxury-006/4.png",
+     "large": "images/products/luxury-006/4.png",
+     "thumb": "images/products/luxury-006/4-sm.webp",
+     "width": 753,
+     "height": 474
+    },
+    {
+     "src": "images/products/luxury-006/5.png",
+     "large": "images/products/luxury-006/5.png",
+     "thumb": "images/products/luxury-006/5-sm.webp",
+     "width": 771,
+     "height": 474
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-007",
+   "categoryId": "luxury",
+   "name": "Luxury 07",
+   "sourceName": "Luxury Model 07",
+   "brand": "Alberto",
+   "price": 629,
+   "currency": "USD",
+   "modelNumber": "LUXURY-007",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-007/1.png",
+     "large": "images/products/luxury-007/1.png",
+     "thumb": "images/products/luxury-007/1-sm.webp",
+     "width": 485,
+     "height": 522
+    },
+    {
+     "src": "images/products/luxury-007/2.png",
+     "large": "images/products/luxury-007/2.png",
+     "thumb": "images/products/luxury-007/2-sm.webp",
+     "width": 531,
+     "height": 522
+    },
+    {
+     "src": "images/products/luxury-007/3.png",
+     "large": "images/products/luxury-007/3.png",
+     "thumb": "images/products/luxury-007/3-sm.webp",
+     "width": 496,
+     "height": 522
+    },
+    {
+     "src": "images/products/luxury-007/4.png",
+     "large": "images/products/luxury-007/4.png",
+     "thumb": "images/products/luxury-007/4-sm.webp",
+     "width": 758,
+     "height": 491
+    },
+    {
+     "src": "images/products/luxury-007/5.png",
+     "large": "images/products/luxury-007/5.png",
+     "thumb": "images/products/luxury-007/5-sm.webp",
+     "width": 766,
+     "height": 491
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-008",
+   "categoryId": "luxury",
+   "name": "Luxury 08",
+   "sourceName": "Luxury Model 08",
+   "brand": "Alberto",
+   "price": 684,
+   "currency": "USD",
+   "modelNumber": "LUXURY-008",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-008/1.png",
+     "large": "images/products/luxury-008/1.png",
+     "thumb": "images/products/luxury-008/1-sm.webp",
+     "width": 495,
+     "height": 531
+    },
+    {
+     "src": "images/products/luxury-008/2.png",
+     "large": "images/products/luxury-008/2.png",
+     "thumb": "images/products/luxury-008/2-sm.webp",
+     "width": 529,
+     "height": 531
+    },
+    {
+     "src": "images/products/luxury-008/3.png",
+     "large": "images/products/luxury-008/3.png",
+     "thumb": "images/products/luxury-008/3-sm.webp",
+     "width": 492,
+     "height": 531
+    },
+    {
+     "src": "images/products/luxury-008/4.png",
+     "large": "images/products/luxury-008/4.png",
+     "thumb": "images/products/luxury-008/4-sm.webp",
+     "width": 757,
+     "height": 482
+    },
+    {
+     "src": "images/products/luxury-008/5.png",
+     "large": "images/products/luxury-008/5.png",
+     "thumb": "images/products/luxury-008/5-sm.webp",
+     "width": 768,
+     "height": 482
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-009",
+   "categoryId": "luxury",
+   "name": "Luxury 09",
+   "sourceName": "Luxury Model 09",
+   "brand": "Alberto",
+   "price": 739,
+   "currency": "USD",
+   "modelNumber": "LUXURY-009",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-009/1.png",
+     "large": "images/products/luxury-009/1.png",
+     "thumb": "images/products/luxury-009/1-sm.webp",
+     "width": 488,
+     "height": 508
+    },
+    {
+     "src": "images/products/luxury-009/2.png",
+     "large": "images/products/luxury-009/2.png",
+     "thumb": "images/products/luxury-009/2-sm.webp",
+     "width": 538,
+     "height": 508
+    },
+    {
+     "src": "images/products/luxury-009/3.png",
+     "large": "images/products/luxury-009/3.png",
+     "thumb": "images/products/luxury-009/3-sm.webp",
+     "width": 486,
+     "height": 508
+    },
+    {
+     "src": "images/products/luxury-009/4.png",
+     "large": "images/products/luxury-009/4.png",
+     "thumb": "images/products/luxury-009/4-sm.webp",
+     "width": 719,
+     "height": 505
+    },
+    {
+     "src": "images/products/luxury-009/5.png",
+     "large": "images/products/luxury-009/5.png",
+     "thumb": "images/products/luxury-009/5-sm.webp",
+     "width": 805,
+     "height": 505
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-010",
+   "categoryId": "luxury",
+   "name": "Luxury 10",
+   "sourceName": "Luxury Model 10",
+   "brand": "Alberto",
+   "price": 794,
+   "currency": "USD",
+   "modelNumber": "LUXURY-010",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-010/1.png",
+     "large": "images/products/luxury-010/1.png",
+     "thumb": "images/products/luxury-010/1-sm.webp",
+     "width": 490,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-010/2.png",
+     "large": "images/products/luxury-010/2.png",
+     "thumb": "images/products/luxury-010/2-sm.webp",
+     "width": 536,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-010/3.png",
+     "large": "images/products/luxury-010/3.png",
+     "thumb": "images/products/luxury-010/3-sm.webp",
+     "width": 487,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-010/4.png",
+     "large": "images/products/luxury-010/4.png",
+     "thumb": "images/products/luxury-010/4-sm.webp",
+     "width": 756,
+     "height": 492
+    },
+    {
+     "src": "images/products/luxury-010/5.png",
+     "large": "images/products/luxury-010/5.png",
+     "thumb": "images/products/luxury-010/5-sm.webp",
+     "width": 768,
+     "height": 492
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-011",
+   "categoryId": "luxury",
+   "name": "Luxury 11",
+   "sourceName": "Luxury Model 11",
+   "brand": "Alberto",
+   "price": 849,
+   "currency": "USD",
+   "modelNumber": "LUXURY-011",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-011/1.png",
+     "large": "images/products/luxury-011/1.png",
+     "thumb": "images/products/luxury-011/1-sm.webp",
+     "width": 478,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-011/2.png",
+     "large": "images/products/luxury-011/2.png",
+     "thumb": "images/products/luxury-011/2-sm.webp",
+     "width": 546,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-011/3.png",
+     "large": "images/products/luxury-011/3.png",
+     "thumb": "images/products/luxury-011/3-sm.webp",
+     "width": 491,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-011/4.png",
+     "large": "images/products/luxury-011/4.png",
+     "thumb": "images/products/luxury-011/4-sm.webp",
+     "width": 750,
+     "height": 494
+    },
+    {
+     "src": "images/products/luxury-011/5.png",
+     "large": "images/products/luxury-011/5.png",
+     "thumb": "images/products/luxury-011/5-sm.webp",
+     "width": 776,
+     "height": 494
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "luxury-012",
+   "categoryId": "luxury",
+   "name": "Luxury 12",
+   "sourceName": "Luxury Model 12",
+   "brand": "Alberto",
+   "price": 904,
+   "currency": "USD",
+   "modelNumber": "LUXURY-012",
+   "description": "Premium styling, refined finishes, and an elegant everyday look.",
+   "specifications": {
+    "movement": "Automatic (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/luxury-012/1.png",
+     "large": "images/products/luxury-012/1.png",
+     "thumb": "images/products/luxury-012/1-sm.webp",
+     "width": 478,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-012/2.png",
+     "large": "images/products/luxury-012/2.png",
+     "thumb": "images/products/luxury-012/2-sm.webp",
+     "width": 546,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-012/3.png",
+     "large": "images/products/luxury-012/3.png",
+     "thumb": "images/products/luxury-012/3-sm.webp",
+     "width": 491,
+     "height": 520
+    },
+    {
+     "src": "images/products/luxury-012/4.png",
+     "large": "images/products/luxury-012/4.png",
+     "thumb": "images/products/luxury-012/4-sm.webp",
+     "width": 750,
+     "height": 494
+    },
+    {
+     "src": "images/products/luxury-012/5.png",
+     "large": "images/products/luxury-012/5.png",
+     "thumb": "images/products/luxury-012/5-sm.webp",
+     "width": 776,
+     "height": 494
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-001",
+   "categoryId": "vintage",
+   "name": "Vintage 01 · Cream Brown",
+   "sourceName": "VINTAGE MODEL 01 Cream Brown",
+   "brand": "Alberto",
+   "price": 129,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-001",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-001/1.png",
+     "large": "images/products/vintage-001/1-md.webp",
+     "thumb": "images/products/vintage-001/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-001/2.png",
+     "large": "images/products/vintage-001/2-md.webp",
+     "thumb": "images/products/vintage-001/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-001/3.png",
+     "large": "images/products/vintage-001/3-md.webp",
+     "thumb": "images/products/vintage-001/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-001/4.png",
+     "large": "images/products/vintage-001/4-md.webp",
+     "thumb": "images/products/vintage-001/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-001/5.png",
+     "large": "images/products/vintage-001/5-md.webp",
+     "thumb": "images/products/vintage-001/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-002",
+   "categoryId": "vintage",
+   "name": "Vintage 02 · Black Black",
+   "sourceName": "VINTAGE MODEL 02 Black Black",
+   "brand": "Alberto",
+   "price": 154,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-002",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-002/1.png",
+     "large": "images/products/vintage-002/1-md.webp",
+     "thumb": "images/products/vintage-002/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-002/2.png",
+     "large": "images/products/vintage-002/2-md.webp",
+     "thumb": "images/products/vintage-002/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-002/3.png",
+     "large": "images/products/vintage-002/3-md.webp",
+     "thumb": "images/products/vintage-002/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-002/4.png",
+     "large": "images/products/vintage-002/4-md.webp",
+     "thumb": "images/products/vintage-002/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/vintage-002/5.png",
+     "large": "images/products/vintage-002/5-md.webp",
+     "thumb": "images/products/vintage-002/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-003",
+   "categoryId": "vintage",
+   "name": "Vintage 03 · White Brown",
+   "sourceName": "VINTAGE MODEL 03 White Brown",
+   "brand": "Alberto",
+   "price": 179,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-003",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-003/1.png",
+     "large": "images/products/vintage-003/1-md.webp",
+     "thumb": "images/products/vintage-003/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-003/2.png",
+     "large": "images/products/vintage-003/2-md.webp",
+     "thumb": "images/products/vintage-003/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-003/3.png",
+     "large": "images/products/vintage-003/3-md.webp",
+     "thumb": "images/products/vintage-003/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-003/4.png",
+     "large": "images/products/vintage-003/4-md.webp",
+     "thumb": "images/products/vintage-003/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-003/5.png",
+     "large": "images/products/vintage-003/5-md.webp",
+     "thumb": "images/products/vintage-003/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-004",
+   "categoryId": "vintage",
+   "name": "Vintage 04 · White Black",
+   "sourceName": "VINTAGE MODEL 04 White Black",
+   "brand": "Alberto",
+   "price": 204,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-004",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-004/1.png",
+     "large": "images/products/vintage-004/1-md.webp",
+     "thumb": "images/products/vintage-004/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-004/2.png",
+     "large": "images/products/vintage-004/2-md.webp",
+     "thumb": "images/products/vintage-004/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-004/3.png",
+     "large": "images/products/vintage-004/3-md.webp",
+     "thumb": "images/products/vintage-004/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-004/4.png",
+     "large": "images/products/vintage-004/4-md.webp",
+     "thumb": "images/products/vintage-004/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-004/5.png",
+     "large": "images/products/vintage-004/5-md.webp",
+     "thumb": "images/products/vintage-004/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-005",
+   "categoryId": "vintage",
+   "name": "Vintage 05",
+   "sourceName": "Vintage Model 05",
+   "brand": "Alberto",
+   "price": 229,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-005",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-005/1.png",
+     "large": "images/products/vintage-005/1-md.webp",
+     "thumb": "images/products/vintage-005/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-005/2.png",
+     "large": "images/products/vintage-005/2-md.webp",
+     "thumb": "images/products/vintage-005/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-005/3.png",
+     "large": "images/products/vintage-005/3-md.webp",
+     "thumb": "images/products/vintage-005/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-005/4.png",
+     "large": "images/products/vintage-005/4-md.webp",
+     "thumb": "images/products/vintage-005/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-005/5.png",
+     "large": "images/products/vintage-005/5-md.webp",
+     "thumb": "images/products/vintage-005/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-006",
+   "categoryId": "vintage",
+   "name": "Vintage 06",
+   "sourceName": "Vintage Model 06",
+   "brand": "Alberto",
+   "price": 254,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-006",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-006/1.webp",
+     "large": "images/products/vintage-006/1-md.webp",
+     "thumb": "images/products/vintage-006/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-006/2.webp",
+     "large": "images/products/vintage-006/2-md.webp",
+     "thumb": "images/products/vintage-006/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-006/3.webp",
+     "large": "images/products/vintage-006/3-md.webp",
+     "thumb": "images/products/vintage-006/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-006/4.webp",
+     "large": "images/products/vintage-006/4-md.webp",
+     "thumb": "images/products/vintage-006/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-006/5.webp",
+     "large": "images/products/vintage-006/5-md.webp",
+     "thumb": "images/products/vintage-006/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-007",
+   "categoryId": "vintage",
+   "name": "Vintage 07",
+   "sourceName": "Vintage Model 07",
+   "brand": "Alberto",
+   "price": 279,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-007",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-007/1.webp",
+     "large": "images/products/vintage-007/1-md.webp",
+     "thumb": "images/products/vintage-007/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-007/2.webp",
+     "large": "images/products/vintage-007/2-md.webp",
+     "thumb": "images/products/vintage-007/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-007/3.webp",
+     "large": "images/products/vintage-007/3-md.webp",
+     "thumb": "images/products/vintage-007/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-007/4.webp",
+     "large": "images/products/vintage-007/4-md.webp",
+     "thumb": "images/products/vintage-007/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-007/5.webp",
+     "large": "images/products/vintage-007/5-md.webp",
+     "thumb": "images/products/vintage-007/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-008",
+   "categoryId": "vintage",
+   "name": "Vintage 08",
+   "sourceName": "Vintage Model 08",
+   "brand": "Alberto",
+   "price": 304,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-008",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-008/1.webp",
+     "large": "images/products/vintage-008/1-md.webp",
+     "thumb": "images/products/vintage-008/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-008/2.webp",
+     "large": "images/products/vintage-008/2-md.webp",
+     "thumb": "images/products/vintage-008/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-008/3.webp",
+     "large": "images/products/vintage-008/3-md.webp",
+     "thumb": "images/products/vintage-008/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-008/4.webp",
+     "large": "images/products/vintage-008/4-md.webp",
+     "thumb": "images/products/vintage-008/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-008/5.webp",
+     "large": "images/products/vintage-008/5-md.webp",
+     "thumb": "images/products/vintage-008/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-009",
+   "categoryId": "vintage",
+   "name": "Vintage 09",
+   "sourceName": "Vintage Model 09",
+   "brand": "Alberto",
+   "price": 329,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-009",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-009/1.webp",
+     "large": "images/products/vintage-009/1-md.webp",
+     "thumb": "images/products/vintage-009/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-009/2.webp",
+     "large": "images/products/vintage-009/2-md.webp",
+     "thumb": "images/products/vintage-009/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-009/3.webp",
+     "large": "images/products/vintage-009/3-md.webp",
+     "thumb": "images/products/vintage-009/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-009/4.webp",
+     "large": "images/products/vintage-009/4-md.webp",
+     "thumb": "images/products/vintage-009/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-009/5.webp",
+     "large": "images/products/vintage-009/5-md.webp",
+     "thumb": "images/products/vintage-009/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-010",
+   "categoryId": "vintage",
+   "name": "Vintage 10",
+   "sourceName": "Vintage Model 10",
+   "brand": "Alberto",
+   "price": 354,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-010",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-010/1.webp",
+     "large": "images/products/vintage-010/1-md.webp",
+     "thumb": "images/products/vintage-010/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-010/2.webp",
+     "large": "images/products/vintage-010/2-md.webp",
+     "thumb": "images/products/vintage-010/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-010/3.webp",
+     "large": "images/products/vintage-010/3-md.webp",
+     "thumb": "images/products/vintage-010/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-010/4.webp",
+     "large": "images/products/vintage-010/4-md.webp",
+     "thumb": "images/products/vintage-010/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-010/5.webp",
+     "large": "images/products/vintage-010/5-md.webp",
+     "thumb": "images/products/vintage-010/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-011",
+   "categoryId": "vintage",
+   "name": "Vintage 11",
+   "sourceName": "Vintage Model 11",
+   "brand": "Alberto",
+   "price": 379,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-011",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-011/1.webp",
+     "large": "images/products/vintage-011/1-md.webp",
+     "thumb": "images/products/vintage-011/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-011/2.webp",
+     "large": "images/products/vintage-011/2-md.webp",
+     "thumb": "images/products/vintage-011/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-011/3.webp",
+     "large": "images/products/vintage-011/3-md.webp",
+     "thumb": "images/products/vintage-011/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-011/4.webp",
+     "large": "images/products/vintage-011/4-md.webp",
+     "thumb": "images/products/vintage-011/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-011/5.webp",
+     "large": "images/products/vintage-011/5-md.webp",
+     "thumb": "images/products/vintage-011/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "vintage-012",
+   "categoryId": "vintage",
+   "name": "Vintage 12",
+   "sourceName": "Vintage Model 12",
+   "brand": "Alberto",
+   "price": 404,
+   "currency": "USD",
+   "modelNumber": "VINTAGE-012",
+   "description": "Classic-inspired styling with timeless details.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/vintage-012/1.webp",
+     "large": "images/products/vintage-012/1-md.webp",
+     "thumb": "images/products/vintage-012/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-012/2.webp",
+     "large": "images/products/vintage-012/2-md.webp",
+     "thumb": "images/products/vintage-012/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-012/3.webp",
+     "large": "images/products/vintage-012/3-md.webp",
+     "thumb": "images/products/vintage-012/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-012/4.webp",
+     "large": "images/products/vintage-012/4-md.webp",
+     "thumb": "images/products/vintage-012/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/vintage-012/5.webp",
+     "large": "images/products/vintage-012/5-md.webp",
+     "thumb": "images/products/vintage-012/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-001",
+   "categoryId": "chronograph",
+   "name": "Chronograph 01",
+   "sourceName": "Chronograph Model 01",
+   "brand": "Alberto",
+   "price": 189,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-001",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-001/1.jpg",
+     "large": "images/products/chronograph-001/1-md.webp",
+     "thumb": "images/products/chronograph-001/1-sm.webp",
+     "width": 1440,
+     "height": 1536
+    },
+    {
+     "src": "images/products/chronograph-001/2.jpg",
+     "large": "images/products/chronograph-001/2-md.webp",
+     "thumb": "images/products/chronograph-001/2-sm.webp",
+     "width": 1488,
+     "height": 1536
+    },
+    {
+     "src": "images/products/chronograph-001/3.jpg",
+     "large": "images/products/chronograph-001/3-md.webp",
+     "thumb": "images/products/chronograph-001/3-sm.webp",
+     "width": 1904,
+     "height": 1216
+    },
+    {
+     "src": "images/products/chronograph-001/4.jpg",
+     "large": "images/products/chronograph-001/4-md.webp",
+     "thumb": "images/products/chronograph-001/4-sm.webp",
+     "width": 1584,
+     "height": 1536
+    },
+    {
+     "src": "images/products/chronograph-001/5.jpg",
+     "large": "images/products/chronograph-001/5-md.webp",
+     "thumb": "images/products/chronograph-001/5-sm.webp",
+     "width": 1904,
+     "height": 1216
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-002",
+   "categoryId": "chronograph",
+   "name": "Midnight Black",
+   "sourceName": "Midnight Black",
+   "brand": "Alberto",
+   "price": 221,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-002",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-002/1.webp",
+     "large": "images/products/chronograph-002/1-md.webp",
+     "thumb": "images/products/chronograph-002/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-002/2.webp",
+     "large": "images/products/chronograph-002/2-md.webp",
+     "thumb": "images/products/chronograph-002/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-002/3.webp",
+     "large": "images/products/chronograph-002/3-md.webp",
+     "thumb": "images/products/chronograph-002/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-002/4.webp",
+     "large": "images/products/chronograph-002/4-md.webp",
+     "thumb": "images/products/chronograph-002/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-002/5.webp",
+     "large": "images/products/chronograph-002/5-md.webp",
+     "thumb": "images/products/chronograph-002/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-003",
+   "categoryId": "chronograph",
+   "name": "Royal Blue",
+   "sourceName": "Royal Blue",
+   "brand": "Alberto",
+   "price": 253,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-003",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-003/1.webp",
+     "large": "images/products/chronograph-003/1-md.webp",
+     "thumb": "images/products/chronograph-003/1-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-003/2.webp",
+     "large": "images/products/chronograph-003/2-md.webp",
+     "thumb": "images/products/chronograph-003/2-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-003/3.webp",
+     "large": "images/products/chronograph-003/3-md.webp",
+     "thumb": "images/products/chronograph-003/3-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-003/4.webp",
+     "large": "images/products/chronograph-003/4-md.webp",
+     "thumb": "images/products/chronograph-003/4-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-003/5.webp",
+     "large": "images/products/chronograph-003/5-md.webp",
+     "thumb": "images/products/chronograph-003/5-sm.webp",
+     "width": 1792,
+     "height": 1344
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-004",
+   "categoryId": "chronograph",
+   "name": "Champagne Gold",
+   "sourceName": "Champagne Gold",
+   "brand": "Alberto",
+   "price": 285,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-004",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-004/1.webp",
+     "large": "images/products/chronograph-004/1-md.webp",
+     "thumb": "images/products/chronograph-004/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-004/2.webp",
+     "large": "images/products/chronograph-004/2-md.webp",
+     "thumb": "images/products/chronograph-004/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-004/3.webp",
+     "large": "images/products/chronograph-004/3-md.webp",
+     "thumb": "images/products/chronograph-004/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-004/4.webp",
+     "large": "images/products/chronograph-004/4-md.webp",
+     "thumb": "images/products/chronograph-004/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-004/5.webp",
+     "large": "images/products/chronograph-004/5-md.webp",
+     "thumb": "images/products/chronograph-004/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-005",
+   "categoryId": "chronograph",
+   "name": "Panda Silver",
+   "sourceName": "Panda Silver",
+   "brand": "Alberto",
+   "price": 317,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-005",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-005/1.jpg",
+     "large": "images/products/chronograph-005/1-md.webp",
+     "thumb": "images/products/chronograph-005/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-005/2.jpg",
+     "large": "images/products/chronograph-005/2-md.webp",
+     "thumb": "images/products/chronograph-005/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-005/3.jpg",
+     "large": "images/products/chronograph-005/3-md.webp",
+     "thumb": "images/products/chronograph-005/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-005/4.jpg",
+     "large": "images/products/chronograph-005/4-md.webp",
+     "thumb": "images/products/chronograph-005/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-005/5.jpg",
+     "large": "images/products/chronograph-005/5-md.webp",
+     "thumb": "images/products/chronograph-005/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-006",
+   "categoryId": "chronograph",
+   "name": "Black Gold",
+   "sourceName": "Black Gold",
+   "brand": "Alberto",
+   "price": 349,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-006",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-006/1.webp",
+     "large": "images/products/chronograph-006/1-md.webp",
+     "thumb": "images/products/chronograph-006/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/chronograph-006/2.webp",
+     "large": "images/products/chronograph-006/2-md.webp",
+     "thumb": "images/products/chronograph-006/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/chronograph-006/3.webp",
+     "large": "images/products/chronograph-006/3-md.webp",
+     "thumb": "images/products/chronograph-006/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/chronograph-006/4.webp",
+     "large": "images/products/chronograph-006/4-md.webp",
+     "thumb": "images/products/chronograph-006/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/chronograph-006/5.webp",
+     "large": "images/products/chronograph-006/5-md.webp",
+     "thumb": "images/products/chronograph-006/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-007",
+   "categoryId": "chronograph",
+   "name": "Ice Blue",
+   "sourceName": "Ice Blue",
+   "brand": "Alberto",
+   "price": 381,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-007",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-007/1.webp",
+     "large": "images/products/chronograph-007/1-md.webp",
+     "thumb": "images/products/chronograph-007/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-007/2.webp",
+     "large": "images/products/chronograph-007/2-md.webp",
+     "thumb": "images/products/chronograph-007/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-007/3.webp",
+     "large": "images/products/chronograph-007/3-md.webp",
+     "thumb": "images/products/chronograph-007/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-007/4.webp",
+     "large": "images/products/chronograph-007/4-md.webp",
+     "thumb": "images/products/chronograph-007/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-007/5.webp",
+     "large": "images/products/chronograph-007/5-md.webp",
+     "thumb": "images/products/chronograph-007/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-008",
+   "categoryId": "chronograph",
+   "name": "Burgundy Red",
+   "sourceName": "Burgundy Red",
+   "brand": "Alberto",
+   "price": 413,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-008",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-008/1.jpg",
+     "large": "images/products/chronograph-008/1-md.webp",
+     "thumb": "images/products/chronograph-008/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-008/2.jpg",
+     "large": "images/products/chronograph-008/2-md.webp",
+     "thumb": "images/products/chronograph-008/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-008/3.jpg",
+     "large": "images/products/chronograph-008/3-md.webp",
+     "thumb": "images/products/chronograph-008/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-008/4.jpg",
+     "large": "images/products/chronograph-008/4-md.webp",
+     "thumb": "images/products/chronograph-008/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-008/5.jpg",
+     "large": "images/products/chronograph-008/5-md.webp",
+     "thumb": "images/products/chronograph-008/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-009",
+   "categoryId": "chronograph",
+   "name": "Carbon Black",
+   "sourceName": "Carbon Black",
+   "brand": "Alberto",
+   "price": 445,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-009",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-009/1.webp",
+     "large": "images/products/chronograph-009/1-md.webp",
+     "thumb": "images/products/chronograph-009/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-009/2.webp",
+     "large": "images/products/chronograph-009/2-md.webp",
+     "thumb": "images/products/chronograph-009/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-009/3.webp",
+     "large": "images/products/chronograph-009/3-md.webp",
+     "thumb": "images/products/chronograph-009/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-009/4.webp",
+     "large": "images/products/chronograph-009/4-md.webp",
+     "thumb": "images/products/chronograph-009/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-009/5.webp",
+     "large": "images/products/chronograph-009/5-md.webp",
+     "thumb": "images/products/chronograph-009/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-010",
+   "categoryId": "chronograph",
+   "name": "Pearl White",
+   "sourceName": "Pearl White",
+   "brand": "Alberto",
+   "price": 477,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-010",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-010/1.webp",
+     "large": "images/products/chronograph-010/1-md.webp",
+     "thumb": "images/products/chronograph-010/1-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-010/2.webp",
+     "large": "images/products/chronograph-010/2-md.webp",
+     "thumb": "images/products/chronograph-010/2-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-010/3.webp",
+     "large": "images/products/chronograph-010/3-md.webp",
+     "thumb": "images/products/chronograph-010/3-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-010/4.webp",
+     "large": "images/products/chronograph-010/4-md.webp",
+     "thumb": "images/products/chronograph-010/4-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-010/5.webp",
+     "large": "images/products/chronograph-010/5-md.webp",
+     "thumb": "images/products/chronograph-010/5-sm.webp",
+     "width": 1408,
+     "height": 1760
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-011",
+   "categoryId": "chronograph",
+   "name": "Graphite Grey",
+   "sourceName": "Graphite Grey",
+   "brand": "Alberto",
+   "price": 509,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-011",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-011/1.webp",
+     "large": "images/products/chronograph-011/1-md.webp",
+     "thumb": "images/products/chronograph-011/1-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-011/2.webp",
+     "large": "images/products/chronograph-011/2-md.webp",
+     "thumb": "images/products/chronograph-011/2-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-011/3.webp",
+     "large": "images/products/chronograph-011/3-md.webp",
+     "thumb": "images/products/chronograph-011/3-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-011/4.webp",
+     "large": "images/products/chronograph-011/4-md.webp",
+     "thumb": "images/products/chronograph-011/4-sm.webp",
+     "width": 1408,
+     "height": 1760
+    },
+    {
+     "src": "images/products/chronograph-011/5.webp",
+     "large": "images/products/chronograph-011/5-md.webp",
+     "thumb": "images/products/chronograph-011/5-sm.webp",
+     "width": 1792,
+     "height": 1344
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "chronograph-012",
+   "categoryId": "chronograph",
+   "name": "Forest TwoTone",
+   "sourceName": "Forest TwoTone",
+   "brand": "Alberto",
+   "price": 541,
+   "currency": "USD",
+   "modelNumber": "CHRONOGRAPH-012",
+   "description": "Sport-inspired styling with a precision-focused appearance.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/chronograph-012/1.webp",
+     "large": "images/products/chronograph-012/1-md.webp",
+     "thumb": "images/products/chronograph-012/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-012/2.webp",
+     "large": "images/products/chronograph-012/2-md.webp",
+     "thumb": "images/products/chronograph-012/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-012/3.webp",
+     "large": "images/products/chronograph-012/3-md.webp",
+     "thumb": "images/products/chronograph-012/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-012/4.webp",
+     "large": "images/products/chronograph-012/4-md.webp",
+     "thumb": "images/products/chronograph-012/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/chronograph-012/5.webp",
+     "large": "images/products/chronograph-012/5-md.webp",
+     "thumb": "images/products/chronograph-012/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-001",
+   "categoryId": "smart",
+   "name": "Black Rainbow",
+   "sourceName": "Black Rainbow",
+   "brand": "Alberto",
+   "price": 99,
+   "currency": "USD",
+   "modelNumber": "SMART-001",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-001/1.png",
+     "large": "images/products/smart-001/1-md.webp",
+     "thumb": "images/products/smart-001/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/smart-001/2.png",
+     "large": "images/products/smart-001/2-md.webp",
+     "thumb": "images/products/smart-001/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-001/3.png",
+     "large": "images/products/smart-001/3-md.webp",
+     "thumb": "images/products/smart-001/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-001/4.png",
+     "large": "images/products/smart-001/4-md.webp",
+     "thumb": "images/products/smart-001/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-001/5.png",
+     "large": "images/products/smart-001/5-md.webp",
+     "thumb": "images/products/smart-001/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-002",
+   "categoryId": "smart",
+   "name": "Black Classic",
+   "sourceName": "Black Classic",
+   "brand": "Alberto",
+   "price": 117,
+   "currency": "USD",
+   "modelNumber": "SMART-002",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-002/1.png",
+     "large": "images/products/smart-002/1-md.webp",
+     "thumb": "images/products/smart-002/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-002/2.png",
+     "large": "images/products/smart-002/2-md.webp",
+     "thumb": "images/products/smart-002/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-002/3.png",
+     "large": "images/products/smart-002/3-md.webp",
+     "thumb": "images/products/smart-002/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-002/4.png",
+     "large": "images/products/smart-002/4-md.webp",
+     "thumb": "images/products/smart-002/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-002/5.png",
+     "large": "images/products/smart-002/5-md.webp",
+     "thumb": "images/products/smart-002/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-003",
+   "categoryId": "smart",
+   "name": "Rose Green",
+   "sourceName": "Rose Green",
+   "brand": "Alberto",
+   "price": 135,
+   "currency": "USD",
+   "modelNumber": "SMART-003",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-003/1.png",
+     "large": "images/products/smart-003/1-md.webp",
+     "thumb": "images/products/smart-003/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-003/2.png",
+     "large": "images/products/smart-003/2-md.webp",
+     "thumb": "images/products/smart-003/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-003/3.png",
+     "large": "images/products/smart-003/3-md.webp",
+     "thumb": "images/products/smart-003/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-003/4.png",
+     "large": "images/products/smart-003/4-md.webp",
+     "thumb": "images/products/smart-003/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-003/5.png",
+     "large": "images/products/smart-003/5-md.webp",
+     "thumb": "images/products/smart-003/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-004",
+   "categoryId": "smart",
+   "name": "Black BlueRed",
+   "sourceName": "Black BlueRed",
+   "brand": "Alberto",
+   "price": 153,
+   "currency": "USD",
+   "modelNumber": "SMART-004",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-004/1.png",
+     "large": "images/products/smart-004/1-md.webp",
+     "thumb": "images/products/smart-004/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-004/2.png",
+     "large": "images/products/smart-004/2-md.webp",
+     "thumb": "images/products/smart-004/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-004/3.png",
+     "large": "images/products/smart-004/3-md.webp",
+     "thumb": "images/products/smart-004/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-004/4.png",
+     "large": "images/products/smart-004/4-md.webp",
+     "thumb": "images/products/smart-004/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-004/5.png",
+     "large": "images/products/smart-004/5-md.webp",
+     "thumb": "images/products/smart-004/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-005",
+   "categoryId": "smart",
+   "name": "Black RoseTrim",
+   "sourceName": "Black RoseTrim",
+   "brand": "Alberto",
+   "price": 171,
+   "currency": "USD",
+   "modelNumber": "SMART-005",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-005/1.png",
+     "large": "images/products/smart-005/1-md.webp",
+     "thumb": "images/products/smart-005/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-005/2.png",
+     "large": "images/products/smart-005/2-md.webp",
+     "thumb": "images/products/smart-005/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-005/3.png",
+     "large": "images/products/smart-005/3-md.webp",
+     "thumb": "images/products/smart-005/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-005/4.png",
+     "large": "images/products/smart-005/4-md.webp",
+     "thumb": "images/products/smart-005/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-005/5.png",
+     "large": "images/products/smart-005/5-md.webp",
+     "thumb": "images/products/smart-005/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-006",
+   "categoryId": "smart",
+   "name": "Olive Green",
+   "sourceName": "Olive Green",
+   "brand": "Alberto",
+   "price": 189,
+   "currency": "USD",
+   "modelNumber": "SMART-006",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-006/1.png",
+     "large": "images/products/smart-006/1-md.webp",
+     "thumb": "images/products/smart-006/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-006/2.png",
+     "large": "images/products/smart-006/2-md.webp",
+     "thumb": "images/products/smart-006/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-006/3.png",
+     "large": "images/products/smart-006/3-md.webp",
+     "thumb": "images/products/smart-006/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-006/4.png",
+     "large": "images/products/smart-006/4-md.webp",
+     "thumb": "images/products/smart-006/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-006/5.png",
+     "large": "images/products/smart-006/5-md.webp",
+     "thumb": "images/products/smart-006/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-007",
+   "categoryId": "smart",
+   "name": "Silver Steel",
+   "sourceName": "Silver Steel",
+   "brand": "Alberto",
+   "price": 207,
+   "currency": "USD",
+   "modelNumber": "SMART-007",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-007/1.png",
+     "large": "images/products/smart-007/1-md.webp",
+     "thumb": "images/products/smart-007/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-007/2.png",
+     "large": "images/products/smart-007/2-md.webp",
+     "thumb": "images/products/smart-007/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-007/3.png",
+     "large": "images/products/smart-007/3-md.webp",
+     "thumb": "images/products/smart-007/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-007/4.png",
+     "large": "images/products/smart-007/4-md.webp",
+     "thumb": "images/products/smart-007/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-007/5.png",
+     "large": "images/products/smart-007/5-md.webp",
+     "thumb": "images/products/smart-007/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-008",
+   "categoryId": "smart",
+   "name": "Rose White",
+   "sourceName": "Rose White",
+   "brand": "Alberto",
+   "price": 225,
+   "currency": "USD",
+   "modelNumber": "SMART-008",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-008/1.png",
+     "large": "images/products/smart-008/1-md.webp",
+     "thumb": "images/products/smart-008/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-008/2.png",
+     "large": "images/products/smart-008/2-md.webp",
+     "thumb": "images/products/smart-008/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-008/3.png",
+     "large": "images/products/smart-008/3-md.webp",
+     "thumb": "images/products/smart-008/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-008/4.png",
+     "large": "images/products/smart-008/4-md.webp",
+     "thumb": "images/products/smart-008/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-008/5.png",
+     "large": "images/products/smart-008/5-md.webp",
+     "thumb": "images/products/smart-008/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-009",
+   "categoryId": "smart",
+   "name": "Black Grey",
+   "sourceName": "Black Grey",
+   "brand": "Alberto",
+   "price": 243,
+   "currency": "USD",
+   "modelNumber": "SMART-009",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-009/1.png",
+     "large": "images/products/smart-009/1-md.webp",
+     "thumb": "images/products/smart-009/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-009/2.png",
+     "large": "images/products/smart-009/2-md.webp",
+     "thumb": "images/products/smart-009/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-009/3.png",
+     "large": "images/products/smart-009/3-md.webp",
+     "thumb": "images/products/smart-009/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-009/4.png",
+     "large": "images/products/smart-009/4-md.webp",
+     "thumb": "images/products/smart-009/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-009/5.png",
+     "large": "images/products/smart-009/5-md.webp",
+     "thumb": "images/products/smart-009/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-010",
+   "categoryId": "smart",
+   "name": "Black GreenFit",
+   "sourceName": "Black GreenFit",
+   "brand": "Alberto",
+   "price": 261,
+   "currency": "USD",
+   "modelNumber": "SMART-010",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-010/1.png",
+     "large": "images/products/smart-010/1-md.webp",
+     "thumb": "images/products/smart-010/1-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-010/2.png",
+     "large": "images/products/smart-010/2-md.webp",
+     "thumb": "images/products/smart-010/2-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-010/3.png",
+     "large": "images/products/smart-010/3-md.webp",
+     "thumb": "images/products/smart-010/3-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-010/4.png",
+     "large": "images/products/smart-010/4-md.webp",
+     "thumb": "images/products/smart-010/4-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-010/5.png",
+     "large": "images/products/smart-010/5-md.webp",
+     "thumb": "images/products/smart-010/5-sm.webp",
+     "width": 1792,
+     "height": 1344
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-011",
+   "categoryId": "smart",
+   "name": "Midnight Grey",
+   "sourceName": "Midnight Grey",
+   "brand": "Alberto",
+   "price": 279,
+   "currency": "USD",
+   "modelNumber": "SMART-011",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-011/1.png",
+     "large": "images/products/smart-011/1-md.webp",
+     "thumb": "images/products/smart-011/1-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-011/2.png",
+     "large": "images/products/smart-011/2-md.webp",
+     "thumb": "images/products/smart-011/2-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-011/3.png",
+     "large": "images/products/smart-011/3-md.webp",
+     "thumb": "images/products/smart-011/3-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-011/4.png",
+     "large": "images/products/smart-011/4-md.webp",
+     "thumb": "images/products/smart-011/4-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/smart-011/5.png",
+     "large": "images/products/smart-011/5-md.webp",
+     "thumb": "images/products/smart-011/5-sm.webp",
+     "width": 1792,
+     "height": 1344
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "smart-012",
+   "categoryId": "smart",
+   "name": "Rose Milanese",
+   "sourceName": "Rose Milanese",
+   "brand": "Alberto",
+   "price": 297,
+   "currency": "USD",
+   "modelNumber": "SMART-012",
+   "description": "Modern wearable styling for connected daily routines.",
+   "specifications": {
+    "movement": "Smart wearable",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/smart-012/1.png",
+     "large": "images/products/smart-012/1-md.webp",
+     "thumb": "images/products/smart-012/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-012/2.png",
+     "large": "images/products/smart-012/2-md.webp",
+     "thumb": "images/products/smart-012/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-012/3.png",
+     "large": "images/products/smart-012/3-md.webp",
+     "thumb": "images/products/smart-012/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-012/4.png",
+     "large": "images/products/smart-012/4-md.webp",
+     "thumb": "images/products/smart-012/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/smart-012/5.png",
+     "large": "images/products/smart-012/5-md.webp",
+     "thumb": "images/products/smart-012/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-001",
+   "categoryId": "sports",
+   "name": "Black Orange",
+   "sourceName": "Black Orange",
+   "brand": "Alberto",
+   "price": 169,
+   "currency": "USD",
+   "modelNumber": "SPORTS-001",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-001/1.png",
+     "large": "images/products/sports-001/1-md.webp",
+     "thumb": "images/products/sports-001/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-001/2.png",
+     "large": "images/products/sports-001/2-md.webp",
+     "thumb": "images/products/sports-001/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-001/3.png",
+     "large": "images/products/sports-001/3-md.webp",
+     "thumb": "images/products/sports-001/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-001/4.png",
+     "large": "images/products/sports-001/4-md.webp",
+     "thumb": "images/products/sports-001/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-001/5.png",
+     "large": "images/products/sports-001/5-md.webp",
+     "thumb": "images/products/sports-001/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-002",
+   "categoryId": "sports",
+   "name": "Black Green",
+   "sourceName": "Black Green",
+   "brand": "Alberto",
+   "price": 207,
+   "currency": "USD",
+   "modelNumber": "SPORTS-002",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-002/1.png",
+     "large": "images/products/sports-002/1-md.webp",
+     "thumb": "images/products/sports-002/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-002/2.png",
+     "large": "images/products/sports-002/2-md.webp",
+     "thumb": "images/products/sports-002/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-002/3.png",
+     "large": "images/products/sports-002/3-md.webp",
+     "thumb": "images/products/sports-002/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-002/4.png",
+     "large": "images/products/sports-002/4-md.webp",
+     "thumb": "images/products/sports-002/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-002/5.png",
+     "large": "images/products/sports-002/5-md.webp",
+     "thumb": "images/products/sports-002/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-003",
+   "categoryId": "sports",
+   "name": "Camo Green",
+   "sourceName": "Camo Green",
+   "brand": "Alberto",
+   "price": 245,
+   "currency": "USD",
+   "modelNumber": "SPORTS-003",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-003/1.png",
+     "large": "images/products/sports-003/1-md.webp",
+     "thumb": "images/products/sports-003/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/sports-003/2.png",
+     "large": "images/products/sports-003/2-md.webp",
+     "thumb": "images/products/sports-003/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/sports-003/3.png",
+     "large": "images/products/sports-003/3-md.webp",
+     "thumb": "images/products/sports-003/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/sports-003/4.png",
+     "large": "images/products/sports-003/4-md.webp",
+     "thumb": "images/products/sports-003/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/sports-003/5.png",
+     "large": "images/products/sports-003/5-md.webp",
+     "thumb": "images/products/sports-003/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-004",
+   "categoryId": "sports",
+   "name": "Black Red",
+   "sourceName": "Black Red",
+   "brand": "Alberto",
+   "price": 283,
+   "currency": "USD",
+   "modelNumber": "SPORTS-004",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-004/1.png",
+     "large": "images/products/sports-004/1-md.webp",
+     "thumb": "images/products/sports-004/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-004/2.png",
+     "large": "images/products/sports-004/2-md.webp",
+     "thumb": "images/products/sports-004/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-004/3.png",
+     "large": "images/products/sports-004/3-md.webp",
+     "thumb": "images/products/sports-004/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-004/4.png",
+     "large": "images/products/sports-004/4-md.webp",
+     "thumb": "images/products/sports-004/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-004/5.png",
+     "large": "images/products/sports-004/5-md.webp",
+     "thumb": "images/products/sports-004/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-005",
+   "categoryId": "sports",
+   "name": "Sport 05 · Black Red",
+   "sourceName": "SPORT MODEL 05 Black Red",
+   "brand": "Alberto",
+   "price": 321,
+   "currency": "USD",
+   "modelNumber": "SPORTS-005",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-005/1.png",
+     "large": "images/products/sports-005/1-md.webp",
+     "thumb": "images/products/sports-005/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-005/2.png",
+     "large": "images/products/sports-005/2-md.webp",
+     "thumb": "images/products/sports-005/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-005/3.png",
+     "large": "images/products/sports-005/3-md.webp",
+     "thumb": "images/products/sports-005/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-005/4.png",
+     "large": "images/products/sports-005/4-md.webp",
+     "thumb": "images/products/sports-005/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-005/5.png",
+     "large": "images/products/sports-005/5-md.webp",
+     "thumb": "images/products/sports-005/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-006",
+   "categoryId": "sports",
+   "name": "Sport 06 · Black Blue",
+   "sourceName": "SPORT MODEL 06 Black Blue",
+   "brand": "Alberto",
+   "price": 359,
+   "currency": "USD",
+   "modelNumber": "SPORTS-006",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-006/1.png",
+     "large": "images/products/sports-006/1-md.webp",
+     "thumb": "images/products/sports-006/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-006/2.png",
+     "large": "images/products/sports-006/2-md.webp",
+     "thumb": "images/products/sports-006/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-006/3.png",
+     "large": "images/products/sports-006/3-md.webp",
+     "thumb": "images/products/sports-006/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-006/4.png",
+     "large": "images/products/sports-006/4-md.webp",
+     "thumb": "images/products/sports-006/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-006/5.png",
+     "large": "images/products/sports-006/5-md.webp",
+     "thumb": "images/products/sports-006/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-007",
+   "categoryId": "sports",
+   "name": "Sport 07 · Military Green",
+   "sourceName": "SPORT MODEL 07 Military Green",
+   "brand": "Alberto",
+   "price": 397,
+   "currency": "USD",
+   "modelNumber": "SPORTS-007",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-007/1.png",
+     "large": "images/products/sports-007/1-md.webp",
+     "thumb": "images/products/sports-007/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-007/2.png",
+     "large": "images/products/sports-007/2-md.webp",
+     "thumb": "images/products/sports-007/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-007/3.png",
+     "large": "images/products/sports-007/3-md.webp",
+     "thumb": "images/products/sports-007/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-007/4.png",
+     "large": "images/products/sports-007/4-md.webp",
+     "thumb": "images/products/sports-007/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-007/5.png",
+     "large": "images/products/sports-007/5-md.webp",
+     "thumb": "images/products/sports-007/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-008",
+   "categoryId": "sports",
+   "name": "Sport 08 · Grey Black",
+   "sourceName": "SPORT MODEL 08 Grey Black",
+   "brand": "Alberto",
+   "price": 435,
+   "currency": "USD",
+   "modelNumber": "SPORTS-008",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-008/1.png",
+     "large": "images/products/sports-008/1-md.webp",
+     "thumb": "images/products/sports-008/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-008/2.png",
+     "large": "images/products/sports-008/2-md.webp",
+     "thumb": "images/products/sports-008/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-008/3.png",
+     "large": "images/products/sports-008/3-md.webp",
+     "thumb": "images/products/sports-008/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-008/4.png",
+     "large": "images/products/sports-008/4-md.webp",
+     "thumb": "images/products/sports-008/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-008/5.png",
+     "large": "images/products/sports-008/5-md.webp",
+     "thumb": "images/products/sports-008/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-009",
+   "categoryId": "sports",
+   "name": "Sport 09 · Desert Sand",
+   "sourceName": "SPORT MODEL 09 Desert Sand",
+   "brand": "Alberto",
+   "price": 473,
+   "currency": "USD",
+   "modelNumber": "SPORTS-009",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-009/1.png",
+     "large": "images/products/sports-009/1-md.webp",
+     "thumb": "images/products/sports-009/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-009/2.png",
+     "large": "images/products/sports-009/2-md.webp",
+     "thumb": "images/products/sports-009/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-009/3.png",
+     "large": "images/products/sports-009/3-md.webp",
+     "thumb": "images/products/sports-009/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-009/4.png",
+     "large": "images/products/sports-009/4-md.webp",
+     "thumb": "images/products/sports-009/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-009/5.png",
+     "large": "images/products/sports-009/5-md.webp",
+     "thumb": "images/products/sports-009/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-010",
+   "categoryId": "sports",
+   "name": "Sport 10 · Polar White",
+   "sourceName": "SPORT MODEL 10 Polar White",
+   "brand": "Alberto",
+   "price": 511,
+   "currency": "USD",
+   "modelNumber": "SPORTS-010",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-010/1.png",
+     "large": "images/products/sports-010/1-md.webp",
+     "thumb": "images/products/sports-010/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-010/2.png",
+     "large": "images/products/sports-010/2-md.webp",
+     "thumb": "images/products/sports-010/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-010/3.png",
+     "large": "images/products/sports-010/3-md.webp",
+     "thumb": "images/products/sports-010/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-010/4.png",
+     "large": "images/products/sports-010/4-md.webp",
+     "thumb": "images/products/sports-010/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-010/5.png",
+     "large": "images/products/sports-010/5-md.webp",
+     "thumb": "images/products/sports-010/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-011",
+   "categoryId": "sports",
+   "name": "Sport 11 · Crimson Red",
+   "sourceName": "SPORT MODEL 11 Crimson Red",
+   "brand": "Alberto",
+   "price": 549,
+   "currency": "USD",
+   "modelNumber": "SPORTS-011",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-011/1.png",
+     "large": "images/products/sports-011/1-md.webp",
+     "thumb": "images/products/sports-011/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-011/2.png",
+     "large": "images/products/sports-011/2-md.webp",
+     "thumb": "images/products/sports-011/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-011/3.png",
+     "large": "images/products/sports-011/3-md.webp",
+     "thumb": "images/products/sports-011/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-011/4.png",
+     "large": "images/products/sports-011/4-md.webp",
+     "thumb": "images/products/sports-011/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-011/5.png",
+     "large": "images/products/sports-011/5-md.webp",
+     "thumb": "images/products/sports-011/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "sports-012",
+   "categoryId": "sports",
+   "name": "Sport 12 · Midnight Blue",
+   "sourceName": "SPORT MODEL 12 Midnight Blue",
+   "brand": "Alberto",
+   "price": 587,
+   "currency": "USD",
+   "modelNumber": "SPORTS-012",
+   "description": "Bold styling designed for an active, adventurous look.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Silicone or rubber (verify)",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/sports-012/1.png",
+     "large": "images/products/sports-012/1-md.webp",
+     "thumb": "images/products/sports-012/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-012/2.png",
+     "large": "images/products/sports-012/2-md.webp",
+     "thumb": "images/products/sports-012/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-012/3.png",
+     "large": "images/products/sports-012/3-md.webp",
+     "thumb": "images/products/sports-012/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-012/4.png",
+     "large": "images/products/sports-012/4-md.webp",
+     "thumb": "images/products/sports-012/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/sports-012/5.png",
+     "large": "images/products/sports-012/5-md.webp",
+     "thumb": "images/products/sports-012/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-001",
+   "categoryId": "womens",
+   "name": "Rosa Perl",
+   "sourceName": "Womens Model 01",
+   "brand": "Alberto",
+   "price": 139,
+   "currency": "USD",
+   "modelNumber": "WOMENS-001",
+   "description": "Rose gold MOP diamond bezel mesh.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-001/1.png",
+     "large": "images/products/womens-001/1-md.webp",
+     "thumb": "images/products/womens-001/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-001/2.png",
+     "large": "images/products/womens-001/2-md.webp",
+     "thumb": "images/products/womens-001/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-001/3.png",
+     "large": "images/products/womens-001/3-md.webp",
+     "thumb": "images/products/womens-001/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-001/4.png",
+     "large": "images/products/womens-001/4-md.webp",
+     "thumb": "images/products/womens-001/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-001/5.png",
+     "large": "images/products/womens-001/5-md.webp",
+     "thumb": "images/products/womens-001/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-002",
+   "categoryId": "womens",
+   "name": "Noir Diamant",
+   "sourceName": "Womens Model 02",
+   "brand": "Alberto",
+   "price": 173,
+   "currency": "USD",
+   "modelNumber": "WOMENS-002",
+   "description": "Yellow gold black diamond jubilee.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-002/1.png",
+     "large": "images/products/womens-002/1-md.webp",
+     "thumb": "images/products/womens-002/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-002/2.png",
+     "large": "images/products/womens-002/2-md.webp",
+     "thumb": "images/products/womens-002/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-002/3.png",
+     "large": "images/products/womens-002/3-md.webp",
+     "thumb": "images/products/womens-002/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-002/4.png",
+     "large": "images/products/womens-002/4-md.webp",
+     "thumb": "images/products/womens-002/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-002/5.png",
+     "large": "images/products/womens-002/5-md.webp",
+     "thumb": "images/products/womens-002/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-003",
+   "categoryId": "womens",
+   "name": "Azure Argent",
+   "sourceName": "Womens Model 03",
+   "brand": "Alberto",
+   "price": 207,
+   "currency": "USD",
+   "modelNumber": "WOMENS-003",
+   "description": "Silver ice blue diamond bezel.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-003/1.png",
+     "large": "images/products/womens-003/1-md.webp",
+     "thumb": "images/products/womens-003/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-003/2.png",
+     "large": "images/products/womens-003/2-md.webp",
+     "thumb": "images/products/womens-003/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-003/3.png",
+     "large": "images/products/womens-003/3-md.webp",
+     "thumb": "images/products/womens-003/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-003/4.png",
+     "large": "images/products/womens-003/4-md.webp",
+     "thumb": "images/products/womens-003/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-003/5.png",
+     "large": "images/products/womens-003/5-md.webp",
+     "thumb": "images/products/womens-003/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-004",
+   "categoryId": "womens",
+   "name": "Bianco Duo",
+   "sourceName": "Womens Model 04",
+   "brand": "Alberto",
+   "price": 241,
+   "currency": "USD",
+   "modelNumber": "WOMENS-004",
+   "description": "Two-tone white Roman numerals.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-004/1.png",
+     "large": "images/products/womens-004/1-md.webp",
+     "thumb": "images/products/womens-004/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-004/2.png",
+     "large": "images/products/womens-004/2-md.webp",
+     "thumb": "images/products/womens-004/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-004/3.png",
+     "large": "images/products/womens-004/3-md.webp",
+     "thumb": "images/products/womens-004/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-004/4.png",
+     "large": "images/products/womens-004/4-md.webp",
+     "thumb": "images/products/womens-004/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-004/5.png",
+     "large": "images/products/womens-004/5-md.webp",
+     "thumb": "images/products/womens-004/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-005",
+   "categoryId": "womens",
+   "name": "Champagne Oro",
+   "sourceName": "Womens Model 05",
+   "brand": "Alberto",
+   "price": 275,
+   "currency": "USD",
+   "modelNumber": "WOMENS-005",
+   "description": "Full yellow gold champagne diamond.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-005/1.png",
+     "large": "images/products/womens-005/1-md.webp",
+     "thumb": "images/products/womens-005/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-005/2.png",
+     "large": "images/products/womens-005/2-md.webp",
+     "thumb": "images/products/womens-005/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-005/3.png",
+     "large": "images/products/womens-005/3-md.webp",
+     "thumb": "images/products/womens-005/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-005/4.png",
+     "large": "images/products/womens-005/4-md.webp",
+     "thumb": "images/products/womens-005/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-005/5.png",
+     "large": "images/products/womens-005/5-md.webp",
+     "thumb": "images/products/womens-005/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-006",
+   "categoryId": "womens",
+   "name": "Emeraude",
+   "sourceName": "Womens Model 06",
+   "brand": "Alberto",
+   "price": 309,
+   "currency": "USD",
+   "modelNumber": "WOMENS-006",
+   "description": "Rose gold emerald green dial.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-006/1.png",
+     "large": "images/products/womens-006/1-md.webp",
+     "thumb": "images/products/womens-006/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-006/2.png",
+     "large": "images/products/womens-006/2-md.webp",
+     "thumb": "images/products/womens-006/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-006/3.png",
+     "large": "images/products/womens-006/3-md.webp",
+     "thumb": "images/products/womens-006/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-006/4.png",
+     "large": "images/products/womens-006/4-md.webp",
+     "thumb": "images/products/womens-006/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-006/5.png",
+     "large": "images/products/womens-006/5-md.webp",
+     "thumb": "images/products/womens-006/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-007",
+   "categoryId": "womens",
+   "name": "Blush Rose",
+   "sourceName": "Womens Model 07",
+   "brand": "Alberto",
+   "price": 343,
+   "currency": "USD",
+   "modelNumber": "WOMENS-007",
+   "description": "Rose gold pink blush mesh diamond.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-007/1.png",
+     "large": "images/products/womens-007/1-md.webp",
+     "thumb": "images/products/womens-007/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-007/2.png",
+     "large": "images/products/womens-007/2-md.webp",
+     "thumb": "images/products/womens-007/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-007/3.png",
+     "large": "images/products/womens-007/3-md.webp",
+     "thumb": "images/products/womens-007/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-007/4.png",
+     "large": "images/products/womens-007/4-md.webp",
+     "thumb": "images/products/womens-007/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-007/5.png",
+     "large": "images/products/womens-007/5-md.webp",
+     "thumb": "images/products/womens-007/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-008",
+   "categoryId": "womens",
+   "name": "Luna Blanc",
+   "sourceName": "Womens Model 08",
+   "brand": "Alberto",
+   "price": 377,
+   "currency": "USD",
+   "modelNumber": "WOMENS-008",
+   "description": "Silver white ceramic MOP.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-008/1.png",
+     "large": "images/products/womens-008/1-md.webp",
+     "thumb": "images/products/womens-008/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-008/2.png",
+     "large": "images/products/womens-008/2-md.webp",
+     "thumb": "images/products/womens-008/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-008/3.png",
+     "large": "images/products/womens-008/3-md.webp",
+     "thumb": "images/products/womens-008/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-008/4.png",
+     "large": "images/products/womens-008/4-md.webp",
+     "thumb": "images/products/womens-008/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-008/5.png",
+     "large": "images/products/womens-008/5-md.webp",
+     "thumb": "images/products/womens-008/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-009",
+   "categoryId": "womens",
+   "name": "Nuit d'Or",
+   "sourceName": "Womens Model 09",
+   "brand": "Alberto",
+   "price": 411,
+   "currency": "USD",
+   "modelNumber": "WOMENS-009",
+   "description": "Black ceramic gold contrast.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-009/1.png",
+     "large": "images/products/womens-009/1-md.webp",
+     "thumb": "images/products/womens-009/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-009/2.png",
+     "large": "images/products/womens-009/2-md.webp",
+     "thumb": "images/products/womens-009/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-009/3.png",
+     "large": "images/products/womens-009/3-md.webp",
+     "thumb": "images/products/womens-009/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-009/4.png",
+     "large": "images/products/womens-009/4-md.webp",
+     "thumb": "images/products/womens-009/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-009/5.png",
+     "large": "images/products/womens-009/5-md.webp",
+     "thumb": "images/products/womens-009/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-010",
+   "categoryId": "womens",
+   "name": "Minimal Rosa",
+   "sourceName": "Womens Model 10",
+   "brand": "Alberto",
+   "price": 445,
+   "currency": "USD",
+   "modelNumber": "WOMENS-010",
+   "description": "Rose gold minimal mesh white.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-010/1.png",
+     "large": "images/products/womens-010/1-md.webp",
+     "thumb": "images/products/womens-010/1-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-010/2.png",
+     "large": "images/products/womens-010/2-md.webp",
+     "thumb": "images/products/womens-010/2-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-010/3.png",
+     "large": "images/products/womens-010/3-md.webp",
+     "thumb": "images/products/womens-010/3-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-010/4.png",
+     "large": "images/products/womens-010/4-md.webp",
+     "thumb": "images/products/womens-010/4-sm.webp",
+     "width": 1920,
+     "height": 1280
+    },
+    {
+     "src": "images/products/womens-010/5.png",
+     "large": "images/products/womens-010/5-md.webp",
+     "thumb": "images/products/womens-010/5-sm.webp",
+     "width": 1920,
+     "height": 1280
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-011",
+   "categoryId": "womens",
+   "name": "Etoile Pave",
+   "sourceName": "Womens Model 11",
+   "brand": "Alberto",
+   "price": 479,
+   "currency": "USD",
+   "modelNumber": "WOMENS-011",
+   "description": "Yellow gold full diamond pave.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-011/1.png",
+     "large": "images/products/womens-011/1-md.webp",
+     "thumb": "images/products/womens-011/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-011/2.png",
+     "large": "images/products/womens-011/2-md.webp",
+     "thumb": "images/products/womens-011/2-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-011/3.png",
+     "large": "images/products/womens-011/3-md.webp",
+     "thumb": "images/products/womens-011/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-011/4.png",
+     "large": "images/products/womens-011/4-md.webp",
+     "thumb": "images/products/womens-011/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-011/5.png",
+     "large": "images/products/womens-011/5-md.webp",
+     "thumb": "images/products/womens-011/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  },
+  {
+   "id": "womens-012",
+   "categoryId": "womens",
+   "name": "Heritage Duo",
+   "sourceName": "Womens Model 12",
+   "brand": "Alberto",
+   "price": 513,
+   "currency": "USD",
+   "modelNumber": "WOMENS-012",
+   "description": "Two-tone champagne Roman numerals.",
+   "specifications": {
+    "movement": "Quartz (demo; verify)",
+    "caseMaterial": "Not verified from images",
+    "strapMaterial": "Material not verified from images",
+    "waterResistance": "Not specified — verify before publishing",
+    "glass": "Not specified — verify before publishing"
+   },
+   "images": [
+    {
+     "src": "images/products/womens-012/1.png",
+     "large": "images/products/womens-012/1-md.webp",
+     "thumb": "images/products/womens-012/1-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-012/2.png",
+     "large": "images/products/womens-012/2-md.webp",
+     "thumb": "images/products/womens-012/2-sm.webp",
+     "width": 1792,
+     "height": 1344
+    },
+    {
+     "src": "images/products/womens-012/3.png",
+     "large": "images/products/womens-012/3-md.webp",
+     "thumb": "images/products/womens-012/3-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-012/4.png",
+     "large": "images/products/womens-012/4-md.webp",
+     "thumb": "images/products/womens-012/4-sm.webp",
+     "width": 1600,
+     "height": 1600
+    },
+    {
+     "src": "images/products/womens-012/5.png",
+     "large": "images/products/womens-012/5-md.webp",
+     "thumb": "images/products/womens-012/5-sm.webp",
+     "width": 1600,
+     "height": 1600
+    }
+   ],
+   "isDemoData": true,
+   "dataNote": "Price and technical specifications are placeholders/estimates for website development; verify before production."
+  }
+ ]
+}
