@@ -22,7 +22,7 @@ static host or sub-folder with no rewrite rules.
 
 | What | Where |
 | --- | --- |
-| Company e-mail, phone, address (currently **placeholders**: `example` domain, fictional phone) | `src/config/site.js` → `contact` |
+| Company e-mail, phone, address (`connect@codewithnihal.xyz`) | `src/config/site.js` → `contact` |
 | Social profile URLs (X, Instagram, Threads, WhatsApp, Behance, Facebook, LinkedIn, YouTube): **not supplied**. Tiles with no URL are hidden in production, shown dimmed in `npm run dev` | `src/config/site.js` → `social` |
 | Store directory for the Store Locator (add `lat`/`lng` to enable “nearest store”) | `src/config/site.js` → `STORES` |
 | Real delivery of contact form, newsletter and order requests | `.env` → `VITE_FORM_ENDPOINT` (see `.env.example`) |
@@ -73,8 +73,8 @@ See `PROJECT_REPORT.md` for the audit, SRS coverage, decisions, and exactly whic
 
 ## Product images and catalogue data (round 2)
 
-`public/images/` and `public/data/data.json` were regenerated from `images.zip` by `tools/build_catalog.py`
-(`pip install pillow`, then `python tools/build_catalog.py <folder containing images/>`). Every product has five
+`public/images/` and `public/data/data.json` can be regenerated from the source images using `tools/tool.js`
+(`node tools/tool.js <folder containing images/>` or `npm run build:catalog <folder>`). Every product has five
 images. The **original files are copied byte-for-byte** (used for zoom); the gallery's main image is a 1400 px
 WebP (only when the original is wider) and cards/thumbnails use 640 px WebP. Images are never cropped
 (`object-fit: contain`). The folder is about 230 MB, so serve it from a CDN/static host with caching.

@@ -259,6 +259,9 @@ class GalleryBoundary extends Component {
 }
 
 export default function GalleryPage() {
-  useDocumentTitle("Gallery");
+  useDocumentTitle(
+    "Gallery",
+    "View our photography gallery featuring fine details, cases, dials, and packaging across all six watch collections."
+  );
   return <GalleryBoundary><CatalogGate>{(data) => <Gallery data={data} />}</CatalogGate></GalleryBoundary>;
 }

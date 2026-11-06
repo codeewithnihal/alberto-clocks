@@ -7,7 +7,10 @@ import CatalogGate from "../features/CatalogGate";
 import PageHeader from "../features/PageHeader";
 
 export default function CollectionsPage() {
-  useDocumentTitle("Collections");
+  useDocumentTitle(
+    "Collections",
+    "Explore our six watch collections: luxury, vintage, chronograph, smart, women's, and sports."
+  );
   return (
     <CatalogGate>
       {(data) => (
@@ -19,11 +22,11 @@ export default function CollectionsPage() {
             <InteractiveHoverButton text="View all watches" href="#/collections/all" className="w-56" />
           </PageHeader>
           <ul className="category-grid">
-            {data.categories.map((category) => {
+            {data.categories.map((category, index) => {
               const list = data.productsByCategory.get(category.id);
               const from = Math.min(...list.map((p) => p.price));
               return (
-                <li key={category.id}>
+                <li key={category.id} data-aos="fade-up" data-aos-delay={(index % 3) * 80}>
                   <AnimatedCategoryCard
                     title={category.name}
                     href={`#/collections/${category.id}`}

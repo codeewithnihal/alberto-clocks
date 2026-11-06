@@ -1,18 +1,16 @@
 /**
- * Single place for brand copy and organisation details.
- *
- * !! The contact details below are PLACEHOLDERS (reserved example domain, fictional
- * !! phone number). Replace them with the real company details before launch.
+ * Brand copy and organisation details.
  */
 export const site = {
   name: "Alberto Watch Company",
   shortName: "Alberto",
+  url: "https://alberto-clocks.codewithnihal.xyz",
   tagline: "Time, refined. Made to be remembered.",
   description:
-    "Six watch collections – luxury, vintage, chronograph, smart, women’s and sports – from Alberto Watch Company.",
+    "Six watch collections: luxury, vintage, chronograph, smart, women's, and sports from Alberto Watch Company.",
 
   contact: {
-    email: "contact@albertowatches.example",
+    email: "connect@codewithnihal.xyz",
     phone: "+1 (555) 010-0100",
     phoneHref: "tel:+15550100100",
     address: ["123 Example Street", "Your City, Country"],

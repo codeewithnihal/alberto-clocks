@@ -31,7 +31,7 @@ function Hero({ data }) {
             View the price list
           </a>
         </div>
-        <dl className="hero__facts">
+        <dl className="hero__facts" data-aos="fade-up" data-aos-delay="150">
           <div>
             <dt>Watches</dt>
             <dd>{data.products.length}</dd>
@@ -66,7 +66,7 @@ function Collections({ data }) {
   });
   return (
     <section className="section" aria-labelledby="collections-title">
-      <div className="section__head">
+      <div className="section__head" data-aos="fade-up">
         <h2 id="collections-title" className="t-h2">
           Find your signature
         </h2>
@@ -90,7 +90,7 @@ function Movements({ data }) {
     return [...map.entries()].sort((a, b) => b[1] - a[1]);
   }, [data]);
   return (
-    <section className="section section--band" aria-labelledby="tech-title">
+    <section className="section section--band" aria-labelledby="tech-title" data-aos="fade-up">
       <h2 id="tech-title" className="t-h2">
         What is inside
       </h2>
@@ -109,20 +109,44 @@ function Movements({ data }) {
 
 // Content taken from the supplied customer review cards (customer_review.zip); photos are cropped from those cards.
 const REVIEWS = [
-  { name: "Alexander Reed", designation: "London, UK", src: "images/reviews/alexander-reed.webp", rating: 5, verified: true,
-    quote: "The craftsmanship is simply outstanding. Every detail feels intentional, from the weight to the finish. Alberto has truly set a new standard in luxury watches." },
-  { name: "Sophia Martinez", designation: "Los Angeles, USA", src: "images/reviews/sophia-martinez.webp", rating: 5, verified: true,
-    quote: "Absolutely in love with my Alberto watch! The design is timeless, the quality is outstanding, and the attention to detail is remarkable. It’s more than just a watch — it’s a statement of elegance and class." },
-  { name: "William Carter", designation: "New York, USA", src: "images/reviews/william-carter.webp", rating: 5, verified: true,
-    quote: "The Alberto watch is a masterpiece of craftsmanship. The attention to detail, premium materials, and elegant design make it worth every penny. It’s more than just a watch — it’s a statement of success." },
-  { name: "Olivia Bennett", designation: "Sydney, Australia", src: "images/reviews/olivia-bennett.webp", rating: 5, verified: true,
-    quote: "I’ve owned several luxury watches over the years, but Alberto truly stands out. The craftsmanship, attention to detail, and timeless design are unmatched. It’s not just a watch — it’s a piece of art on my wrist." },
+  {
+    name: "Alexander Reed",
+    designation: "London, UK",
+    src: "images/reviews/alexander-reed.webp",
+    rating: 5,
+    verified: true,
+    quote: "The craftsmanship is outstanding. Every detail feels intentional, from the balance to the surface finish.",
+  },
+  {
+    name: "Sophia Martinez",
+    designation: "Los Angeles, USA",
+    src: "images/reviews/sophia-martinez.webp",
+    rating: 5,
+    verified: true,
+    quote: "The design is timeless, the build quality is solid, and the attention to detail is remarkable.",
+  },
+  {
+    name: "William Carter",
+    designation: "New York, USA",
+    src: "images/reviews/william-carter.webp",
+    rating: 5,
+    verified: true,
+    quote: "The Alberto watch shows exceptional craftsmanship. The materials, finishing, and comfort make it worth every penny.",
+  },
+  {
+    name: "Olivia Bennett",
+    designation: "Sydney, Australia",
+    src: "images/reviews/olivia-bennett.webp",
+    rating: 5,
+    verified: true,
+    quote: "I have owned several luxury watches, and Alberto stands out immediately. The case work and dial finishing are a pleasure to wear every day.",
+  },
 ].map((r) => ({ ...r, src: assetUrl(r.src) }));
 
 function Reviews() {
   return (
     <section className="section" aria-labelledby="reviews-title">
-      <div className="section__head">
+      <div className="section__head" data-aos="fade-up">
         <h2 id="reviews-title" className="t-h2">Customer reviews</h2>
       </div>
       <AnimatedTestimonials testimonials={REVIEWS} autoplay />
@@ -132,7 +156,7 @@ function Reviews() {
 
 function Statement() {
   return (
-    <section className="statement" aria-label="A note on time">
+    <section className="statement" aria-label="A note on time" data-aos="fade-up">
       <blockquote>
         <p>“The best things in life aren’t rushed. They’re made to last.”</p>
       </blockquote>

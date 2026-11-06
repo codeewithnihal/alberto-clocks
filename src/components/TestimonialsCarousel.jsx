@@ -34,10 +34,10 @@ export const AnimatedTestimonials = ({ testimonials = [], autoplay = false, clas
   const current = testimonials[active] ?? testimonials[0];
 
   return (
-    <div className={cn("mx-auto max-w-sm px-0 py-6 md:max-w-4xl md:py-10", className)}>
+    <div className={cn("isolate mx-auto max-w-sm px-0 py-6 md:max-w-4xl md:py-10", className)}>
       <div className="relative grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20">
         <div>
-          <div className="relative mx-auto h-72 w-full max-w-xs sm:h-80 sm:max-w-sm md:max-w-none">
+          <div className="relative isolate mx-auto h-72 w-full max-w-xs sm:h-80 sm:max-w-sm md:max-w-none">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => {
                 const isActive = index === active;
@@ -50,8 +50,8 @@ export const AnimatedTestimonials = ({ testimonials = [], autoplay = false, clas
                       scale: isActive ? 1 : 0.95,
                       z: isActive ? 0 : -100,
                       rotate: isActive ? 0 : rotations[index],
-                      zIndex: isActive ? 999 : count + 2 - index,
-                      y: isActive ? [0, -80, 0] : 0,
+                      zIndex: isActive ? 10 : count + 2 - index,
+                      y: isActive ? [0, -40, 0] : 0,
                     }}
                     exit={{ opacity: 0, scale: 0.9, z: 100, rotate: rotations[index] }}
                     transition={{ duration: 0.4, ease: "easeInOut" }}

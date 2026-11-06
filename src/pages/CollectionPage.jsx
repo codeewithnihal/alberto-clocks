@@ -35,7 +35,7 @@ function Listing({ data, categoryId }) {
   }, [base, q, sort, movement]);
 
   const title = category ? category.name : "All watches";
-  useDocumentTitle(title);
+  useDocumentTitle(title, category ? category.description : "Explore every timepiece in the Alberto Watch Company catalog.");
 
   if (categoryId !== "all" && !category) {
     return (

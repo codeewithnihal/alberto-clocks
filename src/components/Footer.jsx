@@ -61,7 +61,7 @@ function Footer({
       <div className="container mx-auto px-4 py-12 md:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Newsletter */}
-          <div className="relative">
+          <div className="relative" data-aos="fade-up" data-aos-delay="0">
             <h2 className="mb-4 text-3xl font-semibold tracking-tight">Stay in touch</h2>
             <p className="mb-6 text-muted-foreground">{newsletterText}</p>
             <form className="relative" onSubmit={handleSubscribe}>
@@ -98,7 +98,7 @@ function Footer({
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="60">
             <h3 className="mb-4 text-lg font-semibold">Quick links</h3>
             <nav className="space-y-2 text-sm" aria-label="Footer">
               {quickLinks.map(({ label, href }) => (
@@ -110,7 +110,7 @@ function Footer({
           </div>
 
           {/* Contact */}
-          <div>
+          <div data-aos="fade-up" data-aos-delay="120">
             <h3 className="mb-4 text-lg font-semibold">Contact us</h3>
             {contact && (
               <address className="space-y-2 text-sm not-italic text-muted-foreground">
@@ -138,7 +138,7 @@ function Footer({
           </div>
 
           {/* Follow Us + theme */}
-          <div className="relative">
+          <div className="relative" data-aos="fade-up" data-aos-delay="180">
             <h3 className="mb-4 text-lg font-semibold">{visibleSocial.length ? "Follow us" : "Display"}</h3>
 
             <TooltipProvider>
@@ -197,7 +197,13 @@ function Footer({
                   <button
                     type="button"
                     aria-label="Back to top"
-                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                    onClick={() => {
+                      if (window.__lenis) {
+                        window.__lenis.scrollTo(0);
+                      } else {
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }
+                    }}
                     className="flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:text-foreground"
                   >
                     <ArrowUp className="h-4 w-4" />

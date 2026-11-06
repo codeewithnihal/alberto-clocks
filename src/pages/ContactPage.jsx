@@ -6,7 +6,10 @@ import { site } from "../config/site";
 import { submitForm, NOT_CONNECTED } from "../services/submit";
 
 export default function ContactPage() {
-  useDocumentTitle("Contact us");
+  useDocumentTitle(
+    "Contact us",
+    "Reach the Alberto Watch Company team for inquiries regarding timepieces, boutique services, and customer care."
+  );
   const links = useMemo(
     () => [
       { icon: Mail, label: site.contact.email, href: `mailto:${site.contact.email}` },

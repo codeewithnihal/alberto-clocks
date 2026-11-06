@@ -88,9 +88,10 @@
   }
 
   html {
-    scroll-behavior: smooth;
     scroll-padding-top: 5.5rem;
     -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   body {
@@ -99,6 +100,8 @@
     font-size: var(--font-size-body);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
   /* Cormorant Garamond for editorial headings; h3 and below stay in Inter (functional UI). */

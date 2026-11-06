@@ -25,7 +25,7 @@ function HoverRevealCards({ items = [], className, cardClassName }) {
 
   return (
     <ul className={cn("group m-0 grid w-full max-w-6xl list-none grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:grid-cols-4", className)}>
-      {items.map((item) => {
+      {items.map((item, index) => {
         const style = {
           backgroundImage: `url("${item.imageUrl}")`,
           backgroundPosition: item.imagePosition ?? "center",
@@ -41,7 +41,7 @@ function HoverRevealCards({ items = [], className, cardClassName }) {
           </>
         );
         return (
-          <li key={item.id}>
+          <li key={item.id} data-aos="fade-up" data-aos-delay={(index % 3) * 80}>
             {item.href ? (
               <a href={item.href} className={cardClasses} style={style} aria-label={`${item.title}, ${item.subtitle}`}>
                 {content}

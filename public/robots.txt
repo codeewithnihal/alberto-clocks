@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alberto-clocks.codewithnihal.xyz/sitemap.xml
+

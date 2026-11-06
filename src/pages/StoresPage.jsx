@@ -14,7 +14,10 @@ const fallbackStore = {
 };
 
 export default function StoresPage() {
-  useDocumentTitle("Store locator");
+  useDocumentTitle(
+    "Store locator",
+    "Locate Alberto Watch Company boutiques and authorized retailers worldwide."
+  );
   const stores = STORES.length ? STORES : [fallbackStore];
   const canLocate = stores.some((s) => typeof s.lat === "number" && typeof s.lng === "number");
   const [origin, setOrigin] = useState(null);

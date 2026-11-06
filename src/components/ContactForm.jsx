@@ -11,9 +11,8 @@ import { LIMITS, validateAll, validators } from "../lib/validation";
 
 const smoothEase = [0.25, 0.1, 0.25, 1];
 
-// Placeholder contact details. Replace them or pass your own via the `contactLinks` prop.
 const DEFAULT_CONTACT_LINKS = [
-  { icon: Mail, label: "hello@example.com", href: "mailto:hello@example.com" },
+  { icon: Mail, label: "connect@codewithnihal.xyz", href: "mailto:connect@codewithnihal.xyz" },
   { icon: Phone, label: "+1 (555) 010-0100", href: "tel:+15550100100" },
 ];
 

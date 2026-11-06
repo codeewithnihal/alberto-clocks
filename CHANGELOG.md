@@ -17,12 +17,12 @@
 * `chronograph-005` and `chronograph-008` had two images swapped between them: fixed.
 * `vintage-005` had only 3 of its 5 files in the supplied JSON: all 5 used.
 * File names in many folders do not match the view shown (e.g. `front_view` showing the side), so view names are not shown;
-  the card/first image was chosen by eye per product (`PRIMARY` in `tools/build_catalog.py`).
+  the card/first image was chosen by eye per product (`PRIMARY` in `tools/tool.js`).
 * Product names such as “Luxury Product Image No 1” were tidied to “Luxury 01”; women’s names come from the supplied README.
 
 ## New / modified files
 New: `src/components/GoldDiverWatch.jsx` (yours), `HeroWatch3D.jsx`, `SocialIcons.jsx`; `src/features/HeroWatchStage.jsx`, `ProductGallery.jsx`;
-`src/layout/SearchOverlay.jsx`, `GoldReveal.jsx`; `src/lib/validation.js`; `tools/build_catalog.py`; `public/images/**`, `public/data/data.json` (regenerated).
+`src/layout/SearchOverlay.jsx`, `GoldReveal.jsx`; `src/lib/validation.js`; `tools/tool.js`; `public/images/**`, `public/data/data.json` (regenerated).
 Modified: `src/lib/router.jsx`, `src/App.jsx`, `src/context/CatalogContext.jsx`, `src/lib/format.js`, `src/components/{ContactForm,Footer,SearchFilterBar,WishlistCart}.jsx`,
 `src/layout/{SiteHeader,Layout}.jsx`, `src/pages/{HomePage,ProductPage,GalleryPage,TechnologyPage,CollectionPage,PriceListPage,SiteMapPage}.jsx`,
 `src/features/ProductTile.jsx`, `src/config/site.js`, `src/styles/site.css`, `package.json`. Removed: `src/pages/SearchPage.jsx`.

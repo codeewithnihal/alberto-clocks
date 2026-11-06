@@ -199,7 +199,7 @@ const Marquee = forwardRef(function Marquee(
       role={reduced ? "region" : undefined}
       aria-label={reduced ? label : undefined}
       className={cn(
-        "group/marquee flex overflow-hidden motion-reduce:overflow-auto",
+        "group/marquee flex overflow-hidden motion-reduce:overflow-hidden",
         vertical && "flex-col",
         // Touch pans across the loop go to the drag; the page still scrolls the other way.
         draggable && "motion-safe:cursor-grab motion-safe:select-none",

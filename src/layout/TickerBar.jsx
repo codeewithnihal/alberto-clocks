@@ -6,18 +6,20 @@ import { useNow } from "../hooks/useNow";
 const formatCoord = (value, pos, neg) => `${Math.abs(value).toFixed(3)}° ${value >= 0 ? pos : neg}`;
 
 /**
- * Scrolling ticker at the bottom of every page (SRS): current date, time and the
- * visitor's location from the HTML5 Geolocation API.
- *
- * Privacy: the browser is only asked for the location when the visitor presses
- * "Show my location" (or has already granted it). Coordinates stay in the browser;
- * no reverse-geocoding service is called, so the ticker shows latitude / longitude.
+ * Scrolling marquee ticker positioned below the footer.
+ * Displays current date, time, and user's actual location obtained via the
+ * browser Geolocation API without external tracking or third-party servers.
  */
 export default function TickerBar() {
   const now = useNow(1000);
-  const [geo, setGeo] = useState({ status: "idle", coords: null });
+  const [geo, setGeo] = useState({ status: "asking", coords: null });
 
   const timeZone = useMemo(() => Intl.DateTimeFormat().resolvedOptions().timeZone, []);
+  const city = useMemo(() => {
+    const parts = timeZone.split("/");
+    return (parts[parts.length - 1] || timeZone).replace(/_/g, " ");
+  }, [timeZone]);
+
   const date = useMemo(
     () => new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now),
     // The date only changes at midnight; recompute when the day changes.
@@ -31,7 +33,7 @@ export default function TickerBar() {
       setGeo({ status: "unsupported", coords: null });
       return;
     }
-    setGeo({ status: "asking", coords: null });
+    setGeo((prev) => (prev.status === "granted" ? prev : { status: "asking", coords: null }));
     navigator.geolocation.getCurrentPosition(
       ({ coords }) => setGeo({ status: "granted", coords: { lat: coords.latitude, lng: coords.longitude } }),
       (error) => setGeo({ status: error.code === 1 ? "denied" : "error", coords: null }),
@@ -39,48 +41,58 @@ export default function TickerBar() {
     );
   }, []);
 
-  // If permission was already granted earlier, use it without prompting again.
+  // Request location on mount, respecting existing browser permissions
   useEffect(() => {
-    let cancelled = false;
-    navigator.permissions
-      ?.query({ name: "geolocation" })
-      .then((result) => {
-        if (!cancelled && result.state === "granted") locate();
-      })
-      .catch(() => {});
-    return () => {
-      cancelled = true;
-    };
+    locate();
   }, [locate]);
 
-  const locationText = {
-    idle: "Location not shared",
-    asking: "Locating…",
-    denied: "Location permission denied",
-    error: "Location unavailable",
-    unsupported: "Geolocation not supported by this browser",
-    granted: geo.coords
-      ? `Your location: ${formatCoord(geo.coords.lat, "N", "S")}, ${formatCoord(geo.coords.lng, "E", "W")}`
-      : "",
-  }[geo.status];
-
-  const canAsk = geo.status === "idle" || geo.status === "denied" || geo.status === "error";
+  const locationText = useMemo(() => {
+    switch (geo.status) {
+      case "granted":
+        return geo.coords
+          ? `${city ? `${city} · ` : ""}${formatCoord(geo.coords.lat, "N", "S")}, ${formatCoord(geo.coords.lng, "E", "W")}`
+          : city || "Location found";
+      case "asking":
+        return `Locating${city ? ` near ${city}` : ""}…`;
+      case "denied":
+        return `Location denied (${city})`;
+      case "unsupported":
+        return `Location unavailable (${city})`;
+      case "error":
+      default:
+        return `Location unavailable (${city})`;
+    }
+  }, [geo, city]);
 
   return (
-    <section className="ticker" aria-label="Date, time and location">
-      {canAsk && (
-        <button type="button" className="ticker__locate" onClick={locate}>
-          <MapPin size={14} aria-hidden="true" />
-          Show my location
-        </button>
-      )}
-      <Marquee pauseOnHover gap="3rem" duration={40} fade label="Date, time and location" className="ticker__marquee">
-        <span className="ticker__item">{date}</span>
-        <span className="ticker__item ticker__item--time">
-          {time} <small>({timeZone})</small>
+    <aside className="ticker" aria-label="Current date, time, and location ticker">
+      <Marquee
+        pauseOnHover
+        gap="2.5rem"
+        duration={35}
+        fade
+        label="Date, time and location"
+        className="ticker__marquee"
+      >
+        <span className="ticker__item">
+          <span className="ticker__label">Date:</span> {date}
         </span>
-        <span className="ticker__item">{locationText}</span>
+        <span className="ticker__dot" aria-hidden="true">◆</span>
+        <span className="ticker__item ticker__item--time">
+          <span className="ticker__label">Local Time:</span> {time}{" "}
+          <small>({timeZone})</small>
+        </span>
+        <span className="ticker__dot" aria-hidden="true">◆</span>
+        <span className="ticker__item ticker__item--loc">
+          <MapPin size={12} className="inline mr-1 -mt-0.5 opacity-80" aria-hidden="true" />
+          <span className="ticker__label">Location:</span> {locationText}
+        </span>
+        <span className="ticker__dot" aria-hidden="true">◆</span>
+        <span className="ticker__item ticker__item--brand">
+          Alberto Watch Company <span className="opacity-60">· Time, Refined</span>
+        </span>
+        <span className="ticker__dot" aria-hidden="true">◆</span>
       </Marquee>
-    </section>
+    </aside>
   );
 }

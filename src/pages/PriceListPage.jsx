@@ -99,6 +99,9 @@ function PriceList({ data }) {
 }
 
 export default function PriceListPage() {
-  useDocumentTitle("Price list");
+  useDocumentTitle(
+    "Price list",
+    "Browse transparent pricing and detailed specifications for all Alberto Watch Company models."
+  );
   return <CatalogGate>{(data) => <PriceList data={data} />}</CatalogGate>;
 }

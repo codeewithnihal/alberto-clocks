@@ -7,14 +7,17 @@ import CatalogGate from "../features/CatalogGate";
 import PageHeader from "../features/PageHeader";
 
 export default function AboutPage() {
-  useDocumentTitle("About us");
+  useDocumentTitle(
+    "About us",
+    "Learn about Alberto Watch Company's heritage, dedication to craft, and watchmaking philosophy."
+  );
   return (
     <CatalogGate>
       {(data) => (
         <div className="page">
-          <PageHeader title="Not just a watch. A point of view." />
+          <PageHeader title="Timepieces crafted with a distinct point of view." />
           <div className="about">
-            <div className="about__copy">
+            <div className="about__copy" data-aos="fade-up">
               <p>
                 We believe the right timepiece does more than tell time. It carries your story, marks your
                 milestones, and quietly says something about who you are.
@@ -34,7 +37,7 @@ export default function AboutPage() {
               </address>
               <InteractiveHoverButton text="Contact us" href="#/contact" className="w-48" />
             </div>
-            <img src={assetUrl("brand/logo-full.webp")} alt={`${site.name} logo`} width="640" height="412" className="about__logo" loading="lazy" />
+            <img src={assetUrl("brand/logo-full.webp")} alt={`${site.name} logo`} width="640" height="412" className="about__logo" loading="lazy" data-aos="fade-up" data-aos-delay="100" />
           </div>
         </div>
       )}

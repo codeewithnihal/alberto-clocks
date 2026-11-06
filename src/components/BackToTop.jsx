@@ -64,8 +64,12 @@ export default function BackToTop({
   }, [threshold]);
 
   const scrollToTop = useCallback(() => {
-    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    if (window.__lenis) {
+      window.__lenis.scrollTo(0);
+    } else {
+      const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    }
     onClick?.();
   }, [onClick]);
 
@@ -84,7 +88,7 @@ export default function BackToTop({
           whileTap={{ scale: 0.92 }}
           transition={{ type: "spring", stiffness: 300, damping: 24 }}
           className={cn(
-            "fixed bottom-6 z-50 flex h-12 w-12 items-center justify-center rounded-full border bg-background/80 text-foreground shadow-lg backdrop-blur",
+            "fixed bottom-14 sm:bottom-16 z-50 flex h-12 w-12 items-center justify-center rounded-full border bg-background/80 text-foreground shadow-lg backdrop-blur",
             "ring-offset-background transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
             POSITIONS[position] ?? POSITIONS["bottom-right"],
             className

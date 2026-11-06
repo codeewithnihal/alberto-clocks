@@ -35,17 +35,32 @@ export const routes = [
 ];
 
 export default function App() {
-  // Shown on every page load / reload; a failsafe guarantees it can never block the site.
-  const [loading, setLoading] = useState(true);
-  const done = () => setLoading(false);
+  const [loading, setLoading] = useState(() => {
+    if (typeof window === "undefined") return false;
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return false;
+    try {
+      return sessionStorage.getItem("alberto.preloader_seen") !== "1";
+    } catch {
+      return true;
+    }
+  });
+
+  const done = () => {
+    try {
+      sessionStorage.setItem("alberto.preloader_seen", "1");
+    } catch {}
+    setLoading(false);
+  };
+
   useEffect(() => {
     if (!loading) return;
-    const t = setTimeout(done, 7000);
+    const t = setTimeout(done, 5000);
     return () => clearTimeout(t);
   }, [loading]);
+
   return (
     <>
-    {loading && <Preloader minDuration={2200} onComplete={done} />}
+    {loading && <Preloader minDuration={1200} onComplete={done} />}
     <CatalogProvider>
       <CartProvider>
         <WishlistProvider>

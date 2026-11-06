@@ -59,7 +59,7 @@ function Technology({ data }) {
       )}
 
       {tables.map((group) => (
-        <section key={group.key} className="section tech" aria-labelledby={`tech-${group.key}`}>
+        <section key={group.key} className="section tech" aria-labelledby={`tech-${group.key}`} data-aos="fade-up">
           <h2 id={`tech-${group.key}`} className="t-h2">
             {group.title}
           </h2>
@@ -90,6 +90,9 @@ function Technology({ data }) {
 }
 
 export default function TechnologyPage() {
-  useDocumentTitle("Technology");
+  useDocumentTitle(
+    "Technology",
+    "Discover the engineering, mechanical and quartz movements, sapphire crystals, and cases behind Alberto watches."
+  );
   return <CatalogGate>{(data) => <Technology data={data} />}</CatalogGate>;
 }

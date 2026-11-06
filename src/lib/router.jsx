@@ -171,7 +171,12 @@ export function RouteView({ fallback, notFound: NotFound }) {
       first.current = false;
       return;
     }
-    window.scrollTo({ top: 0, behavior: "auto" });
+    if (window.__lenis) {
+      window.__lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo({ top: 0, behavior: "auto" });
+    }
+    window.AOS?.refresh();
     document.getElementById("main")?.focus({ preventScroll: true });
   }, [path]);
 

@@ -11,7 +11,10 @@ const HELP = [
 ];
 
 export default function SupportPage() {
-  useDocumentTitle("Support");
+  useDocumentTitle(
+    "Support",
+    "Find answers to common questions, get in touch with customer care, and review warranty and care guides."
+  );
   return (
     <div className="page">
       <PageHeader title="Support" intro="Choose the quickest way to get help." />

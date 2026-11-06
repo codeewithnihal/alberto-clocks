@@ -1,37 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 /**
- * Alberto Watch Company - Preloader Design 3 (Centered Logo Ring)  -  React / JSX
- *
- * Usage:
- *   import Preloader3 from './Preloader3';
- *
- *   function App() {
- *     const [loading, setLoading] = useState(true);
- *     return (
- *       <>
- *         {loading && <Preloader3 onComplete={() => setLoading(false)} />}
- *         <YourSite />
- *       </>
- *     );
- *   }
- *
- * Props (sab optional):
- *   logoImage    - apne logo ki image ka path (khali ho to SVG "A" monogram use hota hai)
- *   minDuration  - minimum dikhne ka time (ms), default 3000
- *   onComplete   - preloader khatam hone par call hota hai
- *   brand / sub / loadingText - text badalne ke liye
- *   size         - poori preloader ki chaudai, CSS value. Default 'min(380px,82vw,54vh)' (medium)
- *
- * Next.js mein use karna ho to file ke sabse upar  'use client';  laga dein.
+ * Centered logo ring preloader for Alberto Watch Company.
+ * Uses self-hosted heading and body fonts, with graceful reduced-motion support.
  */
 
 const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
-
 .alb3-pre{position:fixed;inset:0;z-index:999999;display:flex;align-items:center;justify-content:center;
   background:radial-gradient(ellipse at 50% 50%,#0b0a09 0%,#030303 55%,#000 100%);
-  font-family:'Montserrat',Arial,sans-serif;overflow:hidden;transition:opacity .9s ease,visibility .9s ease}
+  font-family:var(--font-body),sans-serif;overflow:hidden;transition:opacity .9s ease,visibility .9s ease}
 .alb3-pre.alb3-hide{opacity:0;visibility:hidden}
 .alb3-box{width:var(--w);display:flex;flex-direction:column;align-items:center;text-align:center}
 
@@ -45,7 +22,7 @@ const CSS = `
 .alb3-mark svg{width:58%;height:auto;filter:drop-shadow(0 2px 5px rgba(0,0,0,.7))}
 .alb3-mark img{width:58%;height:auto;object-fit:contain;filter:drop-shadow(0 2px 5px rgba(0,0,0,.7))}
 
-.alb3-brand{margin-top:calc(var(--w)*.1);font-family:'Cinzel','Trajan Pro',Georgia,serif;font-weight:500;font-size:calc(var(--w)*.148);line-height:1;
+.alb3-brand{margin-top:calc(var(--w)*.1);font-family:var(--font-heading),serif;font-weight:500;font-size:calc(var(--w)*.148);line-height:1;
   letter-spacing:.2em;margin-right:-.2em;white-space:nowrap;
   background:linear-gradient(180deg,#fbe6b0 0%,#dcae60 50%,#b98736 75%,#f0cd8c 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
   opacity:0;animation:alb3-rise 1.1s .4s ease forwards}
@@ -66,6 +43,10 @@ const CSS = `
   opacity:0;animation:alb3-rise 1.1s 1.15s ease forwards}
 
 @keyframes alb3-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce) {
+  .alb3-pre { transition: none; }
+  .alb3-mark, .alb3-brand, .alb3-sub, .alb3-rule, .alb3-loading, .alb3-bar, .alb3-pct { animation: none; opacity: 1; transform: none; }
+}
 `;
 
 export default function Preloader3({
@@ -195,7 +176,7 @@ export default function Preloader3({
                     <stop offset="1" stopColor="#a97a31" />
                   </linearGradient>
                 </defs>
-                <text x="50" y="86" textAnchor="middle" fontFamily="Cinzel,Georgia,serif" fontWeight="500" fontSize="94" fill="url(#alb3Ag)">
+                <text x="50" y="86" textAnchor="middle" fontFamily="var(--font-heading),serif" fontWeight="500" fontSize="94" fill="url(#alb3Ag)">
                   A
                 </text>
                 <path d="M4 52C22 78 66 80 96 46C80 62 58 66 40 60C28 56 18 56 4 52Z" fill="#050403" opacity=".55" transform="translate(0 1.4)" />

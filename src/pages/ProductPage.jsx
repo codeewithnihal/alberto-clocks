@@ -28,7 +28,7 @@ function Detail({ data, id }) {
   const wishlist = useWishlist();
   const toast = useToast();
   const [qty, setQty] = useState(1);
-  useDocumentTitle(product?.name ?? "Watch not found");
+  useDocumentTitle(product?.name ?? "Watch not found", product?.description);
 
   if (!product) {
     return (

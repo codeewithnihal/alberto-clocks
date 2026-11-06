@@ -12,6 +12,9 @@ import "@fontsource/inter/latin-600.css";
 import App from "./App.jsx";
 import "./index.css";
 import "./styles/site.css";
+import { initScrollEffects } from "./lib/scrollEffects";
+
+initScrollEffects();
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>

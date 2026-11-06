@@ -1,27 +1,90 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alberto Watch Company</title>
-    <meta
-      name="description"
-      content="Alberto Watch Company – six watch collections: luxury, vintage, chronograph, smart, women’s and sports."
-    />
-    <meta name="theme-color" content="#111111" />
-    <link rel="icon" type="image/png" sizes="64x64" href="./brand/favicon-64.png" />
-    <link rel="apple-touch-icon" href="./brand/apple-touch-icon.png" />
-    <!-- Apply the saved theme before first paint to avoid a light flash. Light (white) is the default. -->
-    <script>
-      try {
-        var saved = localStorage.getItem("alberto.theme");
-        document.documentElement.classList.toggle("dark", saved === "dark");
-      } catch (e) {}
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Alberto Watch Company | Time, Refined</title>
+  <meta name="description"
+    content="Alberto Watch Company offers six watch collections: luxury, vintage, chronograph, smart, women's, and sports timepieces." />
+  <meta name="theme-color" content="#111111" />
+  <link rel="canonical" href="https://alberto-clocks.codewithnihal.xyz/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alberto Watch Company" />
+  <meta property="og:url" content="https://alberto-clocks.codewithnihal.xyz/" />
+  <meta property="og:title" content="Alberto Watch Company | Time, Refined" />
+  <meta property="og:description"
+    content="Discover six distinct watch collections from Alberto Watch Company: luxury, vintage, chronograph, smart, women's, and sports timepieces." />
+  <meta property="og:image" content="https://alberto-clocks.codewithnihal.xyz/brand/logo-full.webp" />
+  <meta property="og:image:alt" content="Alberto Watch Company logo" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alberto Watch Company  Time, Refined" />
+  <meta name="twitter:description"
+    content="Discover six distinct watch collections from Alberto Watch Company: luxury, vintage, chronograph, smart, women's, and sports timepieces." />
+  <meta name="twitter:image" content="https://alberto-clocks.codewithnihal.xyz/brand/logo-full.webp" />
+
+  <!-- Favicon and Touch Icons -->
+  <link rel="icon" type="image/png" sizes="64x64" href="./brand/favicon-64.png" />
+  <link rel="apple-touch-icon" href="./brand/apple-touch-icon.png" />
+
+  <!-- Lenis & AOS Smooth Scrolling and Entrance Animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Structured Data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://alberto-clocks.codewithnihal.xyz/#organization",
+            "name": "Alberto Watch Company",
+            "url": "https://alberto-clocks.codewithnihal.xyz/",
+            "logo": "https://alberto-clocks.codewithnihal.xyz/brand/logo-full.webp",
+            "email": "connect@codewithnihal.xyz",
+            "description": "Luxury watch manufacturer presenting six curated collections.",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "connect@codewithnihal.xyz"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://alberto-clocks.codewithnihal.xyz/#website",
+            "url": "https://alberto-clocks.codewithnihal.xyz/",
+            "name": "Alberto Watch Company",
+            "description": "Alberto Watch Company official storefront and collections.",
+            "publisher": {
+              "@id": "https://alberto-clocks.codewithnihal.xyz/#organization"
+            }
+          }
+        ]
+      }
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <noscript>Alberto Watch Company needs JavaScript to show the catalogue.</noscript>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+  <!-- Apply the saved theme before first paint to avoid a light flash. Light (white) is the default. -->
+  <script>
+    try {
+      var saved = localStorage.getItem("alberto.theme");
+      document.documentElement.classList.toggle("dark", saved === "dark");
+    } catch (e) { }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <noscript>Alberto Watch Company needs JavaScript to show the catalogue.</noscript>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
