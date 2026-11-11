@@ -25,12 +25,22 @@ function Listing({ data, categoryId }) {
   const q = query.q ?? "";
   const sort = SORTS[query.sort] ? query.sort : "featured";
   const movement = query.movement ?? "";
+  const clockType = query.type ?? "";
+
+  const isClock = category?.id === "clocks" || category?.productType === "clock";
 
   const base = category
-    ? data.productsByCategory.get(category.id)
+    ? (data.productsByCategory.get(category.id) ?? [])
     : data.products;
+
+  const clockTypes = useMemo(
+    () => [...new Set(base.map((p) => p.clockType).filter(Boolean))].sort(),
+    [base],
+  );
+
   const movements = useMemo(
-    () => [...new Set(base.map((p) => p.specifications.movement))].sort(),
+    () =>
+      [...new Set(base.map((p) => p.specifications?.movement).filter(Boolean))].sort(),
     [base],
   );
 
@@ -38,19 +48,23 @@ function Listing({ data, categoryId }) {
     const needle = q.trim().toLowerCase();
     let list = base.filter(
       (p) =>
-        (!needle || p.name.toLowerCase().includes(needle)) &&
-        (!movement || p.specifications.movement === movement),
+        (!needle || p.name.toLowerCase().includes(needle) || p.description?.toLowerCase().includes(needle)) &&
+        (!movement || p.specifications?.movement === movement) &&
+        (!clockType || p.clockType === clockType),
     );
     if (SORTS[sort].fn) list = [...list].sort(SORTS[sort].fn);
     return list;
-  }, [base, q, sort, movement]);
+  }, [base, q, sort, movement, clockType]);
 
-  const title = category ? category.name : "All watches";
+  const title = category
+    ? category.name
+    : "All timepieces";
+
   useDocumentTitle(
     title,
     category
       ? category.description
-      : "Explore every timepiece in the Alberto Watch Company catalog.",
+      : "Explore every timepiece and clock in the Alberto Watch Company catalog.",
   );
 
   if (categoryId !== "all" && !category) {
@@ -66,7 +80,12 @@ function Listing({ data, categoryId }) {
     );
   }
 
-  const filtered = Boolean(q || movement);
+  const filtered = Boolean(q || movement || clockType);
+  const countLabel = isClock
+    ? plural(visible.length, "clock", "clocks")
+    : categoryId === "all"
+      ? plural(visible.length, "timepiece", "timepieces")
+      : plural(visible.length, "watch", "watches");
 
   return (
     <div className="page">
@@ -78,7 +97,7 @@ function Listing({ data, categoryId }) {
         intro={
           category
             ? category.description
-            : `Every watch in the catalogue – ${plural(data.products.length, "timepiece")}.`
+            : `Every timepiece in the catalogue – ${plural(data.products.length, "model", "models")}.`
         }
       />
 
@@ -104,7 +123,7 @@ function Listing({ data, categoryId }) {
 
       <div className="toolbar" role="search">
         <p className="toolbar__count" role="status" aria-live="polite">
-          {plural(visible.length, "watch", "watches")}
+          {countLabel}
         </p>
         <label className="field field--inline">
           <span className="sr-only">Search by name</span>
@@ -116,8 +135,24 @@ function Listing({ data, categoryId }) {
             className="toolbar__search"
           />
         </label>
+        {clockTypes.length > 0 && (
+          <label className="field field--inline">
+            <span className="field__label">Type</span>
+            <select
+              value={clockType}
+              onChange={(e) => setQuery({ type: e.target.value })}
+            >
+              <option value="">All types</option>
+              {clockTypes.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
         <label className="field field--inline">
-          <span className="field__label">Movement</span>
+          <span className="field__label">{isClock ? "Mechanism" : "Movement"}</span>
           <select
             value={movement}
             onChange={(e) => setQuery({ movement: e.target.value })}
@@ -153,12 +188,16 @@ function Listing({ data, categoryId }) {
         products={visible}
         empty={
           <>
-            No watches match your filters.{" "}
+            {isClock
+              ? "No clocks match your filters."
+              : categoryId === "all"
+                ? "No timepieces match your filters."
+                : "No watches match your filters."}{" "}
             {filtered && (
               <button
                 type="button"
                 className="text-link"
-                onClick={() => setQuery({ q: "", movement: "", sort: "" })}
+                onClick={() => setQuery({ q: "", movement: "", type: "", sort: "" })}
               >
                 Clear filters
               </button>
@@ -169,6 +208,7 @@ function Listing({ data, categoryId }) {
     </div>
   );
 }
+
 
 export default function CollectionPage() {
   const { params } = useRouter();

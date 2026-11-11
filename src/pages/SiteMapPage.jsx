@@ -40,7 +40,7 @@ export default function SiteMapPage() {
                     </h3>
                     <p className="text-xs text-primary font-mono mt-0.5">/collections</p>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Overview of all six Alberto watch categories with design notes, representative models, and price ranges.
+                      Overview of Alberto watch collections and dedicated clock range with design notes, representative models, and price ranges.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-border/50">
@@ -50,7 +50,7 @@ export default function SiteMapPage() {
                     <ul className="space-y-1.5 text-sm">
                       <li>
                         <a href="/collections/all" className="hover:text-primary transition-colors flex items-center justify-between">
-                          <span>All watches</span>
+                          <span>All timepieces</span>
                           <span className="text-xs text-muted-foreground font-mono">({data.products.length})</span>
                         </a>
                       </li>
@@ -78,7 +78,7 @@ export default function SiteMapPage() {
                     </h3>
                     <p className="text-xs text-primary font-mono mt-0.5">/price-list</p>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Complete, sortable directory displaying transparent prices, movements, and specifications for all 72 timepieces.
+                      Complete, sortable directory displaying transparent prices, movements, and specifications for all {data.products.length} timepieces and clocks.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-border/50 text-xs text-muted-foreground">

@@ -24,9 +24,9 @@ export default function AboutPage() {
                 We combine traditional horological craftsmanship with first-class service.
               </p>
               <p>
-                Our store presents {plural(data.categories.length, "collection")} – luxury,
-                vintage, chronograph, smart, women’s and sports timepieces – with{" "}
-                {plural(data.products.length, "watch", "watches")} in our current catalogue,
+                Our store presents {plural(data.categories.length, "collection")} spanning luxury,
+                vintage, chronograph, smart, women’s, sports, and clocks with{" "}
+                {plural(data.products.length, "timepiece", "timepieces")} in our current catalogue,
                 alongside authorized service for renowned names such as Rolex, Citizen Eco-Drive,
                 Bulova, and Michael Kors.
               </p>

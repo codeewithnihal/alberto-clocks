@@ -47,7 +47,7 @@ function Hero({ data }) {
           </div>
           <dl className="hero__facts" data-aos="fade-up" data-aos-delay="150">
             <div>
-              <dt>Watches</dt>
+              <dt>Timepieces</dt>
               <dd>{data.products.length}</dd>
             </div>
             <div>
@@ -67,12 +67,16 @@ function Hero({ data }) {
 
 function Collections({ data }) {
   const items = data.categories.map((category) => {
-    const list = data.productsByCategory.get(category.id);
-    const from = Math.min(...list.map((p) => p.price));
+    const list = data.productsByCategory.get(category.id) ?? [];
+    const from = list.length ? Math.min(...list.map((p) => p.price)) : 0;
+    const isClock = category.id === "clocks" || category.productType === "clock";
+    const countStr = isClock
+      ? plural(list.length, "clock", "clocks")
+      : plural(list.length, "watch", "watches");
     return {
       id: category.id,
       title: category.name,
-      subtitle: `${plural(list.length, "watch", "watches")} · from ${formatPrice(from, data.currency)}`,
+      subtitle: `${countStr} · from ${formatPrice(from, data.currency)}`,
       imageUrl: category.coverUrl,
       imagePosition: "25% 50%",
       href: `/collections/${category.id}`,
@@ -85,8 +89,7 @@ function Collections({ data }) {
           Find your signature
         </h2>
         <p className="section__intro">
-          Six distinct expressions of time. Choose a collection to explore its
-          twelve thoughtfully selected timepieces.
+          Curated watch lines and interior clocks. Choose a collection to explore thoughtfully crafted timepieces.
         </p>
       </div>
       <HoverRevealCards

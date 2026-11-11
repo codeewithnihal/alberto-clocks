@@ -510,6 +510,32 @@ code {
   color: hsl(var(--primary));
 }
 
+@keyframes marquee-x {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-100% / var(--marquee-copies, 2)), 0, 0);
+  }
+}
+
+@keyframes marquee-y {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, calc(-100% / var(--marquee-copies, 2)), 0);
+  }
+}
+
+.animate-marquee-x {
+  animation: marquee-x var(--marquee-duration, 35s) linear infinite;
+}
+
+.animate-marquee-y {
+  animation: marquee-y var(--marquee-duration, 35s) linear infinite;
+}
+
 /* ---------- sections ---------- */
 .section {
   padding-block: clamp(3rem, 7vw, 6rem);
@@ -775,9 +801,8 @@ code {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* 2-1-2-1 rhythm with EQUAL card widths across all rows */
-  .collections-layout>li:nth-child(6n + 3),
-  .collections-layout>li:nth-child(6n) {
+  /* Center row for Chronograph (card 3) while keeping equal width */
+  .collections-layout>li:nth-child(3) {
     grid-column: 1 / -1;
     justify-self: center;
     width: 100%;

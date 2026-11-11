@@ -84,6 +84,7 @@ export default function TickerBar() {
     >
       <Marquee
         pauseOnHover
+        repeat={4}
         gap="2.5rem"
         duration={35}
         fade

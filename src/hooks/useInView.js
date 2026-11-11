@@ -11,9 +11,11 @@ export function useInView({
 } = {}) {
   const [inView, setInView] = useState(false);
   const observerRef = useRef(null);
+  const nodeRef = useRef(null);
 
   const observe = useCallback(
     (node) => {
+      nodeRef.current = node;
       if (observerRef.current) {
         observerRef.current.disconnect();
         observerRef.current = null;
@@ -33,7 +35,15 @@ export function useInView({
     [root, rootMargin, threshold],
   );
 
-  useEffect(() => () => observerRef.current?.disconnect(), []);
+  useEffect(() => {
+    if (nodeRef.current && !observerRef.current) {
+      observe(nodeRef.current);
+    }
+    return () => {
+      observerRef.current?.disconnect();
+      observerRef.current = null;
+    };
+  }, [observe]);
 
   return [observe, inView];
 }

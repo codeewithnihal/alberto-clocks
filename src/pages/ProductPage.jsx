@@ -14,10 +14,16 @@ import ProductGallery from "../features/ProductGallery";
 
 const SPEC_LABELS = {
   movement: "Movement",
+  mechanism: "Mechanism",
   caseMaterial: "Case",
   strapMaterial: "Strap",
   waterResistance: "Water resistance",
   glass: "Glass",
+  dimensions: "Dimensions",
+  materials: "Materials & finish",
+  powerSource: "Power source",
+  chime: "Chime & features",
+  clockType: "Clock type",
 };
 
 function Detail({ data, id }) {
@@ -27,31 +33,39 @@ function Detail({ data, id }) {
   const wishlist = useWishlist();
   const toast = useToast();
   const [qty, setQty] = useState(1);
-  useDocumentTitle(product?.name ?? "Watch not found", product?.description);
+  useDocumentTitle(product?.name ?? "Product not found", product?.description);
 
   if (!product) {
     return (
       <div className="state-card">
-        <h1 className="t-h1">Watch not found</h1>
+        <h1 className="t-h1">Product not found</h1>
         <InteractiveHoverButton
-          text="Browse watches"
-          href="/collections/all"
+          text="Browse collections"
+          href="/collections"
           className="w-52"
         />
       </div>
     );
   }
 
+  const isClock = product.productType === "clock" || product.categoryId === "clocks";
   const related = data.productsByCategory
     .get(product.categoryId)
-    .filter((p) => p.id !== product.id)
-    .slice(0, 4);
+    ?.filter((p) => p.id !== product.id)
+    .slice(0, 4) ?? [];
   const wished = wishlist.has(product.id);
-  const specEntries = Object.entries(product.specifications);
-  const known = specEntries.filter(([, value]) => !isUnverifiedSpec(value));
-  const unknown = specEntries
-    .filter(([, value]) => isUnverifiedSpec(value))
-    .map(([key]) => SPEC_LABELS[key] ?? key);
+  const specEntries = Object.entries(product.specifications ?? {});
+  const known = isClock
+    ? specEntries.filter(([key, value]) => {
+        if (key === "caseMaterial" && product.specifications.materials) return false;
+        return value != null && String(value).trim() !== "";
+      })
+    : specEntries.filter(([, value]) => !isUnverifiedSpec(value));
+  const unknown = isClock
+    ? []
+    : specEntries
+        .filter(([, value]) => isUnverifiedSpec(value))
+        .map(([key]) => SPEC_LABELS[key] ?? key);
 
   return (
     <div className="page">

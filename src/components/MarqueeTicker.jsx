@@ -199,7 +199,7 @@ const Marquee = forwardRef(function Marquee(
       role={reduced ? "region" : undefined}
       aria-label={reduced ? label : undefined}
       className={cn(
-        "group/marquee flex overflow-hidden motion-reduce:overflow-hidden",
+        "group/marquee flex overflow-hidden motion-reduce:overflow-x-auto",
         vertical && "flex-col",
         // Touch pans across the loop go to the drag; the page still scrolls the other way.
         draggable && "motion-safe:cursor-grab motion-safe:select-none",
@@ -210,6 +210,7 @@ const Marquee = forwardRef(function Marquee(
       style={{
         "--marquee-gap": gap,
         "--marquee-copies": copies,
+        "--marquee-duration": `${duration}s`,
         maskImage: mask,
         WebkitMaskImage: mask,
         ...style,
@@ -221,7 +222,7 @@ const Marquee = forwardRef(function Marquee(
         ref={track}
         data-slot="marquee-track"
         className={cn(
-          "flex w-max shrink-0 group-focus-within/marquee:[animation-play-state:paused]",
+          "flex w-max shrink-0 will-change-transform group-focus-within/marquee:[animation-play-state:paused]",
           // Held while dragged; the drag moves it by seeking the animation.
           "group-data-[dragging=true]/marquee:[animation-play-state:paused]",
           vertical

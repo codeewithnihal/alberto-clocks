@@ -18,17 +18,20 @@ export default function SearchOverlay({ open, onClose }) {
     () =>
       (data?.products ?? []).map((p) => {
         const category = data.categoryById.get(p.categoryId)?.name;
-        const movement = cleanSpec(p.specifications.movement ?? "");
+        const movement = cleanSpec(p.specifications?.mechanism ?? p.specifications?.movement ?? "");
         return {
           id: p.id,
           title: p.name,
           description: p.description,
-          tags: [category, movement].filter(Boolean),
+          tags: [category, p.clockType, movement].filter(Boolean),
           keywords: [
             p.modelNumber,
             String(p.price),
             formatPrice(p.price, p.currency),
-            cleanSpec(p.specifications.strapMaterial ?? ""),
+            p.clockType,
+            cleanSpec(p.specifications?.materials ?? ""),
+            cleanSpec(p.specifications?.strapMaterial ?? ""),
+            cleanSpec(p.specifications?.chime ?? ""),
           ].filter(Boolean),
           href: `/product/${p.id}`,
           image: p.imageUrl,

@@ -7,7 +7,7 @@ export const site = {
   url: "https://alberto-clocks-eproject.codewithnihal.xyz",
   tagline: "Time, refined. Made to be remembered.",
   description:
-    "Six watch collections: luxury, vintage, chronograph, smart, women's, and sports from Alberto Watch Company.",
+    "Curated watch collections and interior clocks from Alberto Watch Company.",
 
   contact: {
     email: "connect@codewithnihal.xyz",

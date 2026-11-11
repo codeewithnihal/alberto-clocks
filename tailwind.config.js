@@ -43,6 +43,20 @@ export default {
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)",
             },
+            keyframes: {
+                "marquee-x": {
+                    from: { transform: "translate3d(0, 0, 0)" },
+                    to: { transform: "translate3d(calc(-100% / var(--marquee-copies, 2)), 0, 0)" },
+                },
+                "marquee-y": {
+                    from: { transform: "translate3d(0, 0, 0)" },
+                    to: { transform: "translate3d(0, calc(-100% / var(--marquee-copies, 2)), 0)" },
+                },
+            },
+            animation: {
+                "marquee-x": "marquee-x linear infinite",
+                "marquee-y": "marquee-y linear infinite",
+            },
         },
     },
     plugins: [],

@@ -1,4 +1,4 @@
-import { Tag, Watch } from "lucide-react";
+import { Clock, Tag, Watch } from "lucide-react";
 import AnimatedCategoryCard from "../components/CategoriesCards";
 import { InteractiveHoverButton } from "../components/HoverEffectButton";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
@@ -9,7 +9,7 @@ import PageHeader from "../features/PageHeader";
 export default function CollectionsPage() {
   useDocumentTitle(
     "Collections",
-    "Explore our six watch collections: luxury, vintage, chronograph, smart, women's, and sports.",
+    "Explore our watch collections and dedicated clock range.",
   );
   return (
     <CatalogGate>
@@ -18,11 +18,11 @@ export default function CollectionsPage() {
           <div className="mb-10">
             <PageHeader
               title="Collections"
-              intro="Six distinct expressions of time. Choose a collection to explore its twelve thoughtfully selected timepieces."
+              intro="Explore our curated watch lines alongside our dedicated collection of interior clocks."
             >
               <div className="pt-2">
                 <InteractiveHoverButton
-                  text="View all watches"
+                  text="View all timepieces"
                   href="/collections/all"
                   className="w-56"
                 />
@@ -31,8 +31,9 @@ export default function CollectionsPage() {
           </div>
           <ul className="collections-layout">
             {data.categories.map((category, index) => {
-              const list = data.productsByCategory.get(category.id);
-              const from = Math.min(...list.map((p) => p.price));
+              const list = data.productsByCategory.get(category.id) ?? [];
+              const from = list.length ? Math.min(...list.map((p) => p.price)) : 0;
+              const isClock = category.id === "clocks" || category.productType === "clock";
               return (
                 <li
                   key={category.id}
@@ -47,8 +48,14 @@ export default function CollectionsPage() {
                     className="max-w-none"
                     stats={[
                       {
-                        icon: <Watch className="h-4 w-4" aria-hidden="true" />,
-                        label: plural(list.length, "watch", "watches"),
+                        icon: isClock ? (
+                          <Clock className="h-4 w-4" aria-hidden="true" />
+                        ) : (
+                          <Watch className="h-4 w-4" aria-hidden="true" />
+                        ),
+                        label: isClock
+                          ? plural(list.length, "clock", "clocks")
+                          : plural(list.length, "watch", "watches"),
                       },
                       {
                         icon: <Tag className="h-4 w-4" aria-hidden="true" />,
@@ -65,3 +72,4 @@ export default function CollectionsPage() {
     </CatalogGate>
   );
 }
+

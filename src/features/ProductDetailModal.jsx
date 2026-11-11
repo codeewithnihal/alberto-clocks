@@ -10,10 +10,16 @@ import { useRouter } from "../lib/router";
 
 const SPEC_LABELS = {
   movement: "Movement",
+  mechanism: "Mechanism",
   caseMaterial: "Case",
   strapMaterial: "Strap",
   waterResistance: "Water resistance",
   glass: "Glass",
+  dimensions: "Dimensions",
+  materials: "Materials & finish",
+  powerSource: "Power source",
+  chime: "Chime & features",
+  clockType: "Clock type",
 };
 
 /**
@@ -39,8 +45,14 @@ export default function ProductDetailModal({ product, category, onClose, trigger
     : [product?.imageUrl].filter(Boolean);
 
   const wished = product ? wishlist.has(product.id) : false;
+  const isClock = product?.productType === "clock" || product?.categoryId === "clocks";
   const specEntries = product?.specifications ? Object.entries(product.specifications) : [];
-  const validSpecs = specEntries.filter(([, val]) => !isUnverifiedSpec(val));
+  const validSpecs = isClock
+    ? specEntries.filter(([key, val]) => {
+        if (key === "caseMaterial" && product.specifications.materials) return false;
+        return val != null && String(val).trim() !== "";
+      })
+    : specEntries.filter(([, val]) => !isUnverifiedSpec(val));
 
   useEffect(() => {
     // Record opener element if not explicitly passed
@@ -158,7 +170,7 @@ export default function ProductDetailModal({ product, category, onClose, trigger
           type="button"
           onClick={onClose}
           className="product-modal-close"
-          aria-label="Close watch details popup"
+          aria-label={`Close ${product?.name ?? "product"} details popup`}
         >
           <X size={20} aria-hidden="true" />
         </button>

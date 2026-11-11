@@ -31,15 +31,22 @@ function PriceList({ data }) {
     return sort === "category" ? list : [...list].sort(SORTS[sort]);
   }, [data, q, cat, sort]);
 
+  const countLabel =
+    cat === "clocks"
+      ? plural(rows.length, "clock", "clocks")
+      : cat
+        ? plural(rows.length, "watch", "watches")
+        : plural(rows.length, "timepiece", "timepieces");
+
   return (
     <div className="page">
       <PageHeader
         title="Price list"
-        intro="Every watch and its price in one place."
+        intro="Every timepiece and clock with its transparent price in one directory."
       />
       <div className="toolbar" role="search">
         <p className="toolbar__count" role="status" aria-live="polite">
-          {plural(rows.length, "watch", "watches")}
+          {countLabel}
         </p>
         <label className="field field--inline">
           <span className="sr-only">Search by name</span>
@@ -92,9 +99,9 @@ function PriceList({ data }) {
         <table className="table">
           <thead>
             <tr>
-              <th scope="col">Watch</th>
+              <th scope="col">{cat === "clocks" ? "Clock" : cat ? "Watch" : "Item"}</th>
               <th scope="col">Collection</th>
-              <th scope="col">Movement</th>
+              <th scope="col">{cat === "clocks" ? "Mechanism" : "Movement"}</th>
               <th scope="col" className="num">
                 Price
               </th>
@@ -123,7 +130,7 @@ function PriceList({ data }) {
                   </a>
                 </th>
                 <td>{data.categoryById.get(p.categoryId)?.name}</td>
-                <td>{cleanSpec(p.specifications.movement)}</td>
+                <td>{cleanSpec(p.specifications?.mechanism ?? p.specifications?.movement ?? "")}</td>
                 <td className="num tabular">
                   {formatPrice(p.price, p.currency)}
                 </td>
@@ -132,7 +139,7 @@ function PriceList({ data }) {
             {rows.length === 0 && (
               <tr>
                 <td colSpan={4} className="muted">
-                  No watches match your filters.
+                  {cat === "clocks" ? "No clocks match your filters." : "No items match your filters."}
                 </td>
               </tr>
             )}

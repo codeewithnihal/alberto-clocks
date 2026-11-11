@@ -1,6 +1,6 @@
 # Alberto Watch Company
 
-A responsive luxury watch storefront for Alberto Watch Company. The site presents six curated watch collections with interactive 3D elements, detailed product views in accessible popup modals, clean URL routing, transparent pricing, photography galleries, and full shopping cart and wishlist flows.
+A responsive luxury watch and clock storefront for Alberto Watch Company. The site presents curated watch collections alongside a dedicated Clocks collection with interactive 3D elements, detailed product views in accessible popup modals, clean URL routing, transparent pricing, photography galleries, and full shopping cart and wishlist flows.
 
 ## Overview
 
@@ -14,9 +14,10 @@ A responsive luxury watch storefront for Alberto Watch Company. The site present
 ## Pages and Features
 
 - **Home (`/`):** Hero section with interactive 3D Gold Diver timepiece, live catalog highlights, collection showcase, technology overview, and customer reviews.
-- **Collections (`/collections`):** Overview of all six categories (Luxury, Vintage, Chronograph, Smart, Women's, and Sports) arranged in a balanced 2-1-2-1 rhythm with equal card widths across all rows and single-column stacking on mobile.
-- **Collection (`/collections/:categoryId` and `/collections/all`):** Grid view of collection watches with search, movement filter, sorting (price, name), and responsive cards.
-- **Watch Detail Modal:** Selecting any watch across the store opens full specifications, high-resolution photo gallery, quantity selector, price, and Add to Cart / Wishlist actions in a focused popup modal. The background is dimmed and blurred, keyboard focus is trapped, and background content is disabled while the modal is open.
+- **Collections (`/collections`):** Overview of seven categories (Luxury, Vintage, Chronograph, Smart, Women's, Sports, and Clocks) with responsive grid cards and distinct watch and clock counters.
+- **Collection (`/collections/:categoryId` and `/collections/all`):** Grid view of collection items with instant search, movement or clock-type filters, sorting, and responsive product cards.
+- **Clocks Collection (`/collections/clocks`):** Dedicated interior timepiece collection covering Wall Clocks, Desk Clocks, and Mantel Clocks with category-specific type filtering. Current clock entries represent proposed internal Alberto Watch Company models (draft pricing, estimated specifications, and vector placeholder graphics awaiting supplier verification).
+- **Watch and Clock Detail Modal:** Selecting any timepiece or clock opens full specifications, high-resolution imagery, quantity selector, price, and Add to Cart / Wishlist actions in a focused popup modal. The background is dimmed and blurred, keyboard focus is trapped, and background content is disabled while the modal is open.
 - **Product Page (`/product/:id`):** Standalone watch page for direct external links, bookmarks, and search crawlers.
 - **Price List (`/price-list`):** Complete tabular price list with instant search, collection filtering, column sorting, and direct watch modal popup triggers.
 - **Gallery (`/gallery`):** Photography showcase featuring covers, angles, and packaging for all models with category filters and full-screen lightbox inspection.
@@ -30,7 +31,17 @@ A responsive luxury watch storefront for Alberto Watch Company. The site present
 - **Wishlist (`/wishlist`):** Saved items stored locally on the device.
 - **Site Map (`/sitemap`):** Complete index grouped into Shopping & Collections, Brand & Discovery, and Customer Care & Services.
 - **Header & Navigation:** Sticky header with luxury branding, desktop dropdowns, live visitor count, quick search modal, theme switcher, and slide-out mobile drawer.
-- **Footer & Marquee Ticker:** Quick links, contact details, social links, live scrolling marquee with visitor location and time, and a newsletter signup that opens a prefilled email to `connect@codewithnihal.xyz` in the user's default email client.
+- **Footer & Marquee Ticker:** Quick links, contact details, social links, and an accessible continuous marquee ticker displaying today's date, live local time, user location status, and brand mark in a seamless loop.
+
+## Marquee Ticker Implementation
+
+The footer date, time, and location strip runs as a continuous marquee:
+
+- **Seamless Loop:** Driven by CSS transforms (`translate3d`) across a duplicated flex track, avoiding the obsolete HTML `<marquee>` tag. The track length, copies, and timing variables ensure no visible gap or jump across mobile, tablet, and desktop viewports.
+- **Hover & Focus Controls:** Pauses smoothly when the pointer hovers over the strip or when any element inside receives keyboard focus.
+- **Screen Reader Accessibility:** Auxiliary track copies use `aria-hidden="true"` and `inert`, preventing screen readers from announcing duplicate information.
+- **Reduced Motion Support:** When `prefers-reduced-motion: reduce` is enabled, CSS animation stops, duplicate copies are hidden from the layout, and the ticker turns into a keyboard-focusable scrollable region (`role="region"`).
+- **Privacy & Geolocation:** Location information relies solely on the browser's Geolocation API and standard `Intl.DateTimeFormat` timezone detection, without third-party tracking services or external IP queries. If location access is denied or dismissed, the ticker falls back gracefully to the local timezone city.
 
 ## Prerequisites
 
