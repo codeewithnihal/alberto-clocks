@@ -1,0 +1,77 @@
+.aurora {
+  --aurora-bg: #fffdf8;
+  --aurora-text: #17130b;
+  --aurora-border: rgba(166, 124, 36, 0.22);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--aurora-bg);
+  color: var(--aurora-text);
+  border: 1px solid var(--aurora-border);
+}
+
+/* Deep black + metallic gold */
+.aurora--dark {
+  --aurora-bg: #080808;
+  --aurora-text: #f7f2e8;
+  --aurora-border: rgba(212, 175, 55, 0.2);
+}
+
+/* Warm white + champagne gold */
+.aurora--light {
+  --aurora-bg: #fffdf8;
+  --aurora-text: #17130b;
+  --aurora-border: rgba(166, 124, 36, 0.22);
+}
+
+/* Follows common dark-mode class/data-theme conventions */
+.aurora--auto {
+  --aurora-bg: #fffdf8;
+  --aurora-text: #17130b;
+  --aurora-border: rgba(166, 124, 36, 0.22);
+}
+
+.dark .aurora--auto,
+html.dark .aurora--auto,
+[data-theme="dark"] .aurora--auto {
+  --aurora-bg: #080808;
+  --aurora-text: #f7f2e8;
+  --aurora-border: rgba(212, 175, 55, 0.2);
+}
+
+.aurora__lights {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.aurora__light {
+  position: absolute;
+  display: block;
+  width: 75%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  will-change: transform;
+  animation-name: aurora-drift;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.aurora__content {
+  position: relative;
+  z-index: 1;
+  min-height: inherit;
+}
+
+@keyframes aurora-drift {
+  0% { transform: translate3d(-5%, -3%, 0) scale(0.9); }
+  50% { transform: translate3d(8%, 6%, 0) scale(1.08); }
+  100% { transform: translate3d(-2%, 10%, 0) scale(0.96); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora__light { animation: none; }
+}
