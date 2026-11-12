@@ -33,6 +33,8 @@ export default function CollectionsPage() {
             {data.categories.map((category, index) => {
               const list = data.productsByCategory.get(category.id) ?? [];
               const from = list.length ? Math.min(...list.map((p) => p.price)) : 0;
+              const fromCurrency =
+                list.find((p) => p.price === from)?.currency ?? data.currency;
               const isClock = category.id === "clocks" || category.productType === "clock";
               return (
                 <li
@@ -59,7 +61,7 @@ export default function CollectionsPage() {
                       },
                       {
                         icon: <Tag className="h-4 w-4" aria-hidden="true" />,
-                        label: `From ${formatPrice(from, data.currency)}`,
+                        label: `From ${formatPrice(from, fromCurrency)}`,
                       },
                     ]}
                   />

@@ -76,6 +76,12 @@ function Checkout({ data }) {
 
   const lines = cartLines(cart.items, data.byId);
   const subtotal = lines.reduce((sum, l) => sum + l.lineTotal, 0);
+  const totals = lines.reduce((acc, l) => {
+    const currency = l.product.currency ?? data.currency;
+    acc[currency] = (acc[currency] ?? 0) + l.lineTotal;
+    return acc;
+  }, {});
+  const currencies = Object.keys(totals);
 
   if (status === "done" && receipt) {
     return (
@@ -136,7 +142,8 @@ function Checkout({ data }) {
           unitPrice: l.product.price,
         })),
         subtotal,
-        currency: data.currency,
+        currency: currencies.length === 1 ? currencies[0] : data.currency,
+        subtotals: totals,
       });
       cart.clear();
       setReceipt({ reference, delivered });
@@ -221,9 +228,11 @@ function Checkout({ data }) {
           <dl>
             <div>
               <dt>Subtotal</dt>
-              <dd className="tabular">
-                {formatPrice(subtotal, data.currency)}
-              </dd>
+              {currencies.map((currency) => (
+                <dd key={currency} className="tabular">
+                  {formatPrice(totals[currency], currency)}
+                </dd>
+              ))}
             </div>
           </dl>
           <p className="muted small">

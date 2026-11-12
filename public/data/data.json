@@ -160,15 +160,15 @@
     },
     {
       "id": "clocks",
-      "name": "Clocks",
+      "name": "Wall Clocks",
       "productType": "clock",
-      "description": "Precision wall, desk, and mantel clocks crafted for distinguished interiors.",
+      "description": "Wall clocks in brass, gold-tone and marble-style finishes, with a compact desk clock, crafted for distinguished interiors.",
       "cover": {
-        "src": "images/covers/clocks.png",
+        "src": "images/covers/clocks.webp",
         "large": "images/covers/clocks-md.webp",
         "thumb": "images/covers/clocks-sm.webp",
-        "width": 1200,
-        "height": 800
+        "width": 1672,
+        "height": 941
       },
       "productIds": [
         "clock-001",
@@ -176,7 +176,13 @@
         "clock-003",
         "clock-004",
         "clock-005",
-        "clock-006"
+        "clock-006",
+        "clock-007",
+        "clock-008",
+        "clock-009",
+        "clock-010",
+        "clock-011",
+        "clock-012"
       ]
     }
   ],
@@ -4290,294 +4296,757 @@
       "categoryId": "clocks",
       "productType": "clock",
       "clockType": "Wall Clocks",
-      "name": "Meridian Wall Clock",
-      "sourceName": "Meridian Wall Clock",
+      "name": "Alberto Emerald Heritage",
+      "sourceName": "Alberto Emerald Heritage",
       "brand": "Alberto",
-      "price": 229,
-      "currency": "USD",
-      "modelNumber": "AWC-WC-01",
-      "description": "A clean, brass-tone wall clock with a quiet sweep movement and a restrained, easy-to-read dial.",
+      "price": 19900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-001",
+      "description": "A luxurious statement wall clock with an emerald green marble-style dial, gold-tone round frame and hands, Roman numeral-inspired hour markers, and three decorative sub-dials.",
       "specifications": {
         "clockType": "Wall Clock",
-        "mechanism": "Quartz, silent sweep",
-        "movement": "Quartz, silent sweep",
-        "dimensions": "30 cm diameter × 4.2 cm depth; 1.1 kg",
-        "materials": "Brushed-brass-tone bezel; verify case material",
-        "caseMaterial": "Brushed-brass-tone bezel",
-        "powerSource": "1 AA battery",
-        "chime": "Silent sweep; no chime"
+        "movement": "Not specified",
+        "materials": "Conceptual metal frame with marble-style dial; Gold tone finish"
       },
+      "style": "Classic luxury",
+      "colors": [
+        "Emerald green",
+        "Gold"
+      ],
+      "stock": 20,
       "images": [
         {
-          "src": "images/products/clock-001/1.png",
-          "large": "images/products/clock-001/1-md.webp",
+          "src": "images/products/clock-001/1.jpg",
+          "large": "images/products/clock-001/1.jpg",
           "thumb": "images/products/clock-001/1-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 765,
+          "height": 509
         },
         {
-          "src": "images/products/clock-001/2.png",
-          "large": "images/products/clock-001/2-md.webp",
+          "src": "images/products/clock-001/2.jpg",
+          "large": "images/products/clock-001/2.jpg",
           "thumb": "images/products/clock-001/2-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 764,
+          "height": 509
         },
         {
-          "src": "images/products/clock-001/3.png",
-          "large": "images/products/clock-001/3-md.webp",
-          "thumb": "images/products/clock-001/3-sm.webp",
-          "width": 640,
-          "height": 640
+          "src": "images/products/clock-001/3.jpg",
+          "large": "images/products/clock-001/3.jpg",
+          "thumb": "images/products/clock-001/3.jpg",
+          "width": 544,
+          "height": 509
+        },
+        {
+          "src": "images/products/clock-001/4.jpg",
+          "large": "images/products/clock-001/4.jpg",
+          "thumb": "images/products/clock-001/4.jpg",
+          "width": 438,
+          "height": 509
+        },
+        {
+          "src": "images/products/clock-001/5.jpg",
+          "large": "images/products/clock-001/5.jpg",
+          "thumb": "images/products/clock-001/5.jpg",
+          "width": 541,
+          "height": 509
         }
       ],
       "isDemoData": true,
-      "isPlaceholderImage": true,
-      "dataNote": "Draft internal specifications and placeholder imagery for website development; verify before production."
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
     },
     {
       "id": "clock-002",
       "categoryId": "clocks",
       "productType": "clock",
       "clockType": "Wall Clocks",
-      "name": "Heritage Chime Wall Clock",
-      "sourceName": "Heritage Chime Wall Clock",
+      "name": "Alberto Walnut Westminster",
+      "sourceName": "Alberto Walnut Westminster",
       "brand": "Alberto",
-      "price": 349,
-      "currency": "USD",
-      "modelNumber": "AWC-WC-02",
-      "description": "A warm walnut-finish wall clock with a traditional dial and an optional Westminster chime.",
+      "price": 22900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-002",
+      "description": "A traditional walnut-finish Westminster-style wall clock with a Roman dial, pendulum case and classic wood presentation.",
       "specifications": {
         "clockType": "Wall Clock",
-        "mechanism": "Quartz",
-        "movement": "Quartz",
-        "dimensions": "35.6 cm diameter × 5.5 cm depth; 1.8 kg",
-        "materials": "Walnut-finish case; brass-tone bezel",
-        "caseMaterial": "Walnut-finish case; brass-tone bezel",
-        "powerSource": "2 AA batteries",
-        "chime": "Westminster chime; night shut-off"
+        "movement": "Not specified",
+        "materials": "Walnut-style wood; Walnut finish"
       },
+      "style": "Traditional / classic",
+      "colors": [
+        "Walnut brown",
+        "Cream",
+        "Gold-tone accents"
+      ],
+      "stock": 16,
       "images": [
         {
-          "src": "images/products/clock-002/1.png",
+          "src": "images/products/clock-002/1.webp",
           "large": "images/products/clock-002/1-md.webp",
           "thumb": "images/products/clock-002/1-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 7680,
+          "height": 4322
         },
         {
-          "src": "images/products/clock-002/2.png",
+          "src": "images/products/clock-002/2.webp",
           "large": "images/products/clock-002/2-md.webp",
           "thumb": "images/products/clock-002/2-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 7680,
+          "height": 4322
         },
         {
-          "src": "images/products/clock-002/3.png",
+          "src": "images/products/clock-002/3.webp",
           "large": "images/products/clock-002/3-md.webp",
           "thumb": "images/products/clock-002/3-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 7680,
+          "height": 4322
+        },
+        {
+          "src": "images/products/clock-002/4.webp",
+          "large": "images/products/clock-002/4-md.webp",
+          "thumb": "images/products/clock-002/4-sm.webp",
+          "width": 7680,
+          "height": 4322
+        },
+        {
+          "src": "images/products/clock-002/5.webp",
+          "large": "images/products/clock-002/5-md.webp",
+          "thumb": "images/products/clock-002/5-sm.webp",
+          "width": 7680,
+          "height": 4322
         }
       ],
       "isDemoData": true,
-      "isPlaceholderImage": true,
-      "dataNote": "Draft internal specifications and placeholder imagery for website development; verify before production."
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
     },
     {
       "id": "clock-003",
       "categoryId": "clocks",
       "productType": "clock",
       "clockType": "Desk Clocks",
-      "name": "Arc Desk Clock",
-      "sourceName": "Arc Desk Clock",
+      "name": "Alberto Brushed Brass Compact",
+      "sourceName": "Alberto Brushed Brass Compact",
       "brand": "Alberto",
-      "price": 159,
-      "currency": "USD",
-      "modelNumber": "AWC-DC-01",
-      "description": "A compact desk clock with a brushed-brass finish, a simple dial, and quiet operation.",
+      "price": 12900,
+      "currency": "PKR",
+      "modelNumber": "ALB-CLK-003",
+      "description": "A compact desk clock with a brushed-brass finish, simple ivory dial, minimal Arabic hour markers, dark hands and quiet operation.",
       "specifications": {
         "clockType": "Desk Clock",
-        "mechanism": "Quartz, silent sweep",
-        "movement": "Quartz, silent sweep",
-        "dimensions": "15 × 12 × 6 cm; 0.65 kg",
-        "materials": "Brushed-brass-tone finish; verify case material",
-        "caseMaterial": "Brushed-brass-tone finish",
-        "powerSource": "1 AA battery",
-        "chime": "Silent operation"
+        "movement": "Quiet operation; exact movement not specified",
+        "materials": "Brushed brass / metal; Brushed brass finish"
       },
+      "style": "Minimal classic",
+      "colors": [
+        "Brushed brass",
+        "Ivory"
+      ],
+      "stock": 25,
       "images": [
         {
-          "src": "images/products/clock-003/1.png",
-          "large": "images/products/clock-003/1-md.webp",
+          "src": "images/products/clock-003/1.webp",
+          "large": "images/products/clock-003/1.webp",
           "thumb": "images/products/clock-003/1-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 760,
+          "height": 548
         },
         {
-          "src": "images/products/clock-003/2.png",
-          "large": "images/products/clock-003/2-md.webp",
+          "src": "images/products/clock-003/2.webp",
+          "large": "images/products/clock-003/2.webp",
           "thumb": "images/products/clock-003/2-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 760,
+          "height": 548
         },
         {
-          "src": "images/products/clock-003/3.png",
-          "large": "images/products/clock-003/3-md.webp",
-          "thumb": "images/products/clock-003/3-sm.webp",
-          "width": 640,
-          "height": 640
+          "src": "images/products/clock-003/3.webp",
+          "large": "images/products/clock-003/3.webp",
+          "thumb": "images/products/clock-003/3.webp",
+          "width": 451,
+          "height": 461
+        },
+        {
+          "src": "images/products/clock-003/4.webp",
+          "large": "images/products/clock-003/4.webp",
+          "thumb": "images/products/clock-003/4.webp",
+          "width": 525,
+          "height": 461
+        },
+        {
+          "src": "images/products/clock-003/5.webp",
+          "large": "images/products/clock-003/5.webp",
+          "thumb": "images/products/clock-003/5.webp",
+          "width": 528,
+          "height": 461
         }
       ],
       "isDemoData": true,
-      "isPlaceholderImage": true,
-      "dataNote": "Draft internal specifications and placeholder imagery for website development; verify before production."
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
     },
     {
       "id": "clock-004",
       "categoryId": "clocks",
       "productType": "clock",
-      "clockType": "Desk Clocks",
-      "name": "Atelier Mechanical Desk Clock",
-      "sourceName": "Atelier Mechanical Desk Clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Heritage Key-Wound",
+      "sourceName": "Alberto Heritage Key-Wound",
       "brand": "Alberto",
-      "price": 279,
-      "currency": "USD",
-      "modelNumber": "AWC-DC-02",
-      "description": "A small, key-wound mechanical clock with a polished-brass finish and classic detailing.",
+      "price": 18900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-004",
+      "description": "A unique wall-mounted vintage clock with polished-brass construction, an open Roman-numeral frame, exposed mechanical gears and classic detailing.",
       "specifications": {
-        "clockType": "Desk Clock",
-        "mechanism": "Mechanical, proposed 8-day reserve",
-        "movement": "Mechanical, proposed 8-day reserve",
-        "dimensions": "14 × 11 × 7 cm; 1.2 kg",
-        "materials": "Polished-brass-tone finish; verify case material",
-        "caseMaterial": "Polished-brass-tone finish",
-        "powerSource": "Key-wound",
-        "chime": "Mechanical timekeeping; no chime"
+        "clockType": "Wall Clock",
+        "movement": "Key-wound mechanical",
+        "materials": "Brass; Polished brass finish"
       },
+      "style": "Vintage mechanical",
+      "colors": [
+        "Polished brass",
+        "Ivory"
+      ],
+      "stock": 18,
       "images": [
         {
-          "src": "images/products/clock-004/1.png",
-          "large": "images/products/clock-004/1-md.webp",
+          "src": "images/products/clock-004/1.webp",
+          "large": "images/products/clock-004/1.webp",
           "thumb": "images/products/clock-004/1-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 768,
+          "height": 512
         },
         {
-          "src": "images/products/clock-004/2.png",
-          "large": "images/products/clock-004/2-md.webp",
+          "src": "images/products/clock-004/2.webp",
+          "large": "images/products/clock-004/2.webp",
           "thumb": "images/products/clock-004/2-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 768,
+          "height": 512
         },
         {
-          "src": "images/products/clock-004/3.png",
-          "large": "images/products/clock-004/3-md.webp",
-          "thumb": "images/products/clock-004/3-sm.webp",
-          "width": 640,
-          "height": 640
+          "src": "images/products/clock-004/3.webp",
+          "large": "images/products/clock-004/3.webp",
+          "thumb": "images/products/clock-004/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-004/4.webp",
+          "large": "images/products/clock-004/4.webp",
+          "thumb": "images/products/clock-004/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-004/5.webp",
+          "large": "images/products/clock-004/5.webp",
+          "thumb": "images/products/clock-004/5.webp",
+          "width": 512,
+          "height": 512
         }
       ],
       "isDemoData": true,
-      "isPlaceholderImage": true,
-      "dataNote": "Draft internal specifications and placeholder imagery for website development; verify before production."
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
     },
     {
       "id": "clock-005",
       "categoryId": "clocks",
       "productType": "clock",
-      "clockType": "Mantel Clocks",
-      "name": "Solstice Mantel Clock",
-      "sourceName": "Solstice Mantel Clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Sunburst Pendulum",
+      "sourceName": "Alberto Sunburst Pendulum",
       "brand": "Alberto",
-      "price": 489,
-      "currency": "USD",
-      "modelNumber": "AWC-MC-01",
-      "description": "A walnut-finish mantel clock with a pendulum and traditional mechanical character.",
+      "price": 21900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-005",
+      "description": "A modern-vintage brass wall clock with a sunburst-inspired frame, radial dial, decorative spherical finials and a matching pendulum disk.",
       "specifications": {
-        "clockType": "Mantel Clock",
-        "mechanism": "Mechanical pendulum, proposed 8-day reserve",
-        "movement": "Mechanical pendulum, proposed 8-day reserve",
-        "dimensions": "32 × 21 × 13 cm; 3.6 kg",
-        "materials": "Walnut-finish case; verify wood and dial materials",
-        "caseMaterial": "Walnut-finish case",
-        "powerSource": "Key-wound",
-        "chime": "Pendulum; hourly strike; verify shut-off behavior"
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass; Polished brass finish"
       },
+      "style": "Modern vintage",
+      "colors": [
+        "Brass",
+        "Ivory"
+      ],
+      "stock": 14,
       "images": [
         {
-          "src": "images/products/clock-005/1.png",
-          "large": "images/products/clock-005/1-md.webp",
+          "src": "images/products/clock-005/1.webp",
+          "large": "images/products/clock-005/1.webp",
           "thumb": "images/products/clock-005/1-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 768,
+          "height": 512
         },
         {
-          "src": "images/products/clock-005/2.png",
-          "large": "images/products/clock-005/2-md.webp",
+          "src": "images/products/clock-005/2.webp",
+          "large": "images/products/clock-005/2.webp",
           "thumb": "images/products/clock-005/2-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 768,
+          "height": 512
         },
         {
-          "src": "images/products/clock-005/3.png",
-          "large": "images/products/clock-005/3-md.webp",
-          "thumb": "images/products/clock-005/3-sm.webp",
-          "width": 640,
-          "height": 640
+          "src": "images/products/clock-005/3.webp",
+          "large": "images/products/clock-005/3.webp",
+          "thumb": "images/products/clock-005/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-005/4.webp",
+          "large": "images/products/clock-005/4.webp",
+          "thumb": "images/products/clock-005/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-005/5.webp",
+          "large": "images/products/clock-005/5.webp",
+          "thumb": "images/products/clock-005/5.webp",
+          "width": 512,
+          "height": 512
         }
       ],
       "isDemoData": true,
-      "isPlaceholderImage": true,
-      "dataNote": "Draft internal specifications and placeholder imagery for website development; verify before production."
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
     },
     {
       "id": "clock-006",
       "categoryId": "clocks",
       "productType": "clock",
-      "clockType": "Mantel Clocks",
-      "name": "Westminster Mantel Clock",
-      "sourceName": "Westminster Mantel Clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Asymmetric Marble Gold",
+      "sourceName": "Alberto Asymmetric Marble Gold",
       "brand": "Alberto",
-      "price": 699,
-      "currency": "USD",
-      "modelNumber": "AWC-MC-02",
-      "description": "A larger mantel clock with a pendulum, walnut finish, and a Westminster chime.",
+      "price": 24900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-006",
+      "description": "A modern luxury wall clock with a brushed-gold dial, asymmetric marble accent, concentric brass frame and geometric decorative bars with spherical finials.",
       "specifications": {
-        "clockType": "Mantel Clock",
-        "mechanism": "Mechanical pendulum, proposed 8-day reserve",
-        "movement": "Mechanical pendulum, proposed 8-day reserve",
-        "dimensions": "40 × 27 × 16 cm; 5.2 kg",
-        "materials": "Walnut-finish case with brass-tone dial; verify materials",
-        "caseMaterial": "Walnut-finish case with brass-tone dial",
-        "powerSource": "Key-wound",
-        "chime": "Westminster chime; proposed night shut-off"
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / marble-look composite; Brushed gold finish"
       },
+      "style": "Contemporary luxury",
+      "colors": [
+        "Gold",
+        "White marble"
+      ],
+      "stock": 12,
       "images": [
         {
-          "src": "images/products/clock-006/1.png",
-          "large": "images/products/clock-006/1-md.webp",
+          "src": "images/products/clock-006/1.webp",
+          "large": "images/products/clock-006/1.webp",
           "thumb": "images/products/clock-006/1-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 768,
+          "height": 512
         },
         {
-          "src": "images/products/clock-006/2.png",
-          "large": "images/products/clock-006/2-md.webp",
+          "src": "images/products/clock-006/2.webp",
+          "large": "images/products/clock-006/2.webp",
           "thumb": "images/products/clock-006/2-sm.webp",
-          "width": 640,
-          "height": 640
+          "width": 768,
+          "height": 512
         },
         {
-          "src": "images/products/clock-006/3.png",
-          "large": "images/products/clock-006/3-md.webp",
-          "thumb": "images/products/clock-006/3-sm.webp",
-          "width": 640,
-          "height": 640
+          "src": "images/products/clock-006/3.webp",
+          "large": "images/products/clock-006/3.webp",
+          "thumb": "images/products/clock-006/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-006/4.webp",
+          "large": "images/products/clock-006/4.webp",
+          "thumb": "images/products/clock-006/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-006/5.webp",
+          "large": "images/products/clock-006/5.webp",
+          "thumb": "images/products/clock-006/5.webp",
+          "width": 512,
+          "height": 512
         }
       ],
       "isDemoData": true,
-      "isPlaceholderImage": true,
-      "dataNote": "Draft internal specifications and placeholder imagery for website development; verify before production."
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
+    },
+    {
+      "id": "clock-007",
+      "categoryId": "clocks",
+      "productType": "clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Double Ring Marble",
+      "sourceName": "Alberto Double Ring Marble",
+      "brand": "Alberto",
+      "price": 26900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-007",
+      "description": "A modern luxury wall clock featuring a brushed-gold dial, open double-ring frame, marble-look decorative discs, spherical brass accents and a refined geometric silhouette.",
+      "specifications": {
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / marble-look composite; Brushed gold finish"
+      },
+      "style": "Modern luxury",
+      "colors": [
+        "Gold",
+        "White marble"
+      ],
+      "stock": 10,
+      "images": [
+        {
+          "src": "images/products/clock-007/1.webp",
+          "large": "images/products/clock-007/1.webp",
+          "thumb": "images/products/clock-007/1-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-007/2.webp",
+          "large": "images/products/clock-007/2.webp",
+          "thumb": "images/products/clock-007/2-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-007/3.webp",
+          "large": "images/products/clock-007/3.webp",
+          "thumb": "images/products/clock-007/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-007/4.webp",
+          "large": "images/products/clock-007/4.webp",
+          "thumb": "images/products/clock-007/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-007/5.webp",
+          "large": "images/products/clock-007/5.webp",
+          "thumb": "images/products/clock-007/5.webp",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "isDemoData": true,
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
+    },
+    {
+      "id": "clock-008",
+      "categoryId": "clocks",
+      "productType": "clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Marble Vertical",
+      "sourceName": "Alberto Marble Vertical",
+      "brand": "Alberto",
+      "price": 27900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-008",
+      "description": "A modern luxury wall clock featuring a brushed-gold dial, white veined-marble vertical accent, sculptural circular brass frame, decorative gold spheres and a matching pendulum disk.",
+      "specifications": {
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / marble-look composite; Brushed gold finish"
+      },
+      "style": "Sculptural modern",
+      "colors": [
+        "Gold",
+        "White marble"
+      ],
+      "stock": 9,
+      "images": [
+        {
+          "src": "images/products/clock-008/1.webp",
+          "large": "images/products/clock-008/1.webp",
+          "thumb": "images/products/clock-008/1-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-008/2.webp",
+          "large": "images/products/clock-008/2.webp",
+          "thumb": "images/products/clock-008/2-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-008/3.webp",
+          "large": "images/products/clock-008/3.webp",
+          "thumb": "images/products/clock-008/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-008/4.webp",
+          "large": "images/products/clock-008/4.webp",
+          "thumb": "images/products/clock-008/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-008/5.webp",
+          "large": "images/products/clock-008/5.webp",
+          "thumb": "images/products/clock-008/5.webp",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "isDemoData": true,
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
+    },
+    {
+      "id": "clock-009",
+      "categoryId": "clocks",
+      "productType": "clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Marble Gold Halo",
+      "sourceName": "Alberto Marble Gold Halo",
+      "brand": "Alberto",
+      "price": 28900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-009",
+      "description": "A luxury wall clock featuring a brushed-gold central dial, asymmetric cream marble-veined circular frame, sculptural gold arcs, spherical accents, vertical bars and a matching pendulum disk.",
+      "specifications": {
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / marble-look composite; Brushed gold finish"
+      },
+      "style": "Contemporary luxury",
+      "colors": [
+        "Gold",
+        "Cream marble"
+      ],
+      "stock": 8,
+      "images": [
+        {
+          "src": "images/products/clock-009/1.webp",
+          "large": "images/products/clock-009/1.webp",
+          "thumb": "images/products/clock-009/1-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-009/2.webp",
+          "large": "images/products/clock-009/2.webp",
+          "thumb": "images/products/clock-009/2-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-009/3.webp",
+          "large": "images/products/clock-009/3.webp",
+          "thumb": "images/products/clock-009/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-009/4.webp",
+          "large": "images/products/clock-009/4.webp",
+          "thumb": "images/products/clock-009/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-009/5.webp",
+          "large": "images/products/clock-009/5.webp",
+          "thumb": "images/products/clock-009/5.webp",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "isDemoData": true,
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
+    },
+    {
+      "id": "clock-010",
+      "categoryId": "clocks",
+      "productType": "clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Black Marble Luxe",
+      "sourceName": "Alberto Black Marble Luxe",
+      "brand": "Alberto",
+      "price": 31900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-010",
+      "description": "A contemporary luxury wall clock with a brushed-gold dial, black marble-veined vertical accent, sculptural circular gold frame, decorative rods and spherical details, and a matching pendulum disk.",
+      "specifications": {
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / black marble-look composite; Brushed gold finish"
+      },
+      "style": "Contemporary luxury",
+      "colors": [
+        "Gold",
+        "Black marble"
+      ],
+      "stock": 7,
+      "images": [
+        {
+          "src": "images/products/clock-010/1.webp",
+          "large": "images/products/clock-010/1.webp",
+          "thumb": "images/products/clock-010/1-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-010/2.webp",
+          "large": "images/products/clock-010/2.webp",
+          "thumb": "images/products/clock-010/2-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-010/3.webp",
+          "large": "images/products/clock-010/3.webp",
+          "thumb": "images/products/clock-010/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-010/4.webp",
+          "large": "images/products/clock-010/4.webp",
+          "thumb": "images/products/clock-010/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-010/5.webp",
+          "large": "images/products/clock-010/5.webp",
+          "thumb": "images/products/clock-010/5.webp",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "isDemoData": true,
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
+    },
+    {
+      "id": "clock-011",
+      "categoryId": "clocks",
+      "productType": "clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Asymmetric Sunburst",
+      "sourceName": "Alberto Asymmetric Sunburst",
+      "brand": "Alberto",
+      "price": 32900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-011",
+      "description": "A luxury wall clock featuring a brushed-gold sunburst dial, asymmetric veined-marble accent, sculptural open gold ring, decorative rods and spherical accents, and a matching pendulum disk.",
+      "specifications": {
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / marble-look composite; Brushed gold finish"
+      },
+      "style": "Asymmetric luxury",
+      "colors": [
+        "Gold",
+        "Cream marble"
+      ],
+      "stock": 6,
+      "images": [
+        {
+          "src": "images/products/clock-011/1.webp",
+          "large": "images/products/clock-011/1.webp",
+          "thumb": "images/products/clock-011/1-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-011/2.webp",
+          "large": "images/products/clock-011/2.webp",
+          "thumb": "images/products/clock-011/2-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-011/3.webp",
+          "large": "images/products/clock-011/3.webp",
+          "thumb": "images/products/clock-011/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-011/4.webp",
+          "large": "images/products/clock-011/4.webp",
+          "thumb": "images/products/clock-011/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-011/5.webp",
+          "large": "images/products/clock-011/5.webp",
+          "thumb": "images/products/clock-011/5.webp",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "isDemoData": true,
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
+    },
+    {
+      "id": "clock-012",
+      "categoryId": "clocks",
+      "productType": "clock",
+      "clockType": "Wall Clocks",
+      "name": "Alberto Symmetric Marble Gold",
+      "sourceName": "Alberto Symmetric Marble Gold",
+      "brand": "Alberto",
+      "price": 34900,
+      "currency": "PKR",
+      "modelNumber": "ALB-WC-012",
+      "description": "A luxury wall clock featuring a brushed-gold dial, symmetrical veined-marble side accents, circular gold frame, layered horizontal gold bars with spherical details, vertical rods and a matching pendulum disk.",
+      "specifications": {
+        "clockType": "Wall Clock",
+        "movement": "Not specified",
+        "materials": "Brass / marble-look composite; Brushed gold finish"
+      },
+      "style": "Symmetric modern luxury",
+      "colors": [
+        "Gold",
+        "White marble"
+      ],
+      "stock": 5,
+      "images": [
+        {
+          "src": "images/products/clock-012/1.webp",
+          "large": "images/products/clock-012/1.webp",
+          "thumb": "images/products/clock-012/1-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-012/2.webp",
+          "large": "images/products/clock-012/2.webp",
+          "thumb": "images/products/clock-012/2-sm.webp",
+          "width": 768,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-012/3.webp",
+          "large": "images/products/clock-012/3.webp",
+          "thumb": "images/products/clock-012/3.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-012/4.webp",
+          "large": "images/products/clock-012/4.webp",
+          "thumb": "images/products/clock-012/4.webp",
+          "width": 512,
+          "height": 512
+        },
+        {
+          "src": "images/products/clock-012/5.webp",
+          "large": "images/products/clock-012/5.webp",
+          "thumb": "images/products/clock-012/5.webp",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "isDemoData": true,
+      "dataNote": "AI-generated concept imagery and suggested catalog prices; confirm specifications before publishing."
     }
   ]
 }

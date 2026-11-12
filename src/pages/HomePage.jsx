@@ -6,7 +6,7 @@ import Aurora from "../components/ui/Aurora";
 import { assetUrl } from "../lib/assets";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { site } from "../config/site";
-import { cleanSpec, formatPrice, plural } from "../lib/format";
+import { cleanSpec, formatPrice, isUnverifiedSpec, plural } from "../lib/format";
 import CatalogGate from "../features/CatalogGate";
 
 function Hero({ data }) {
@@ -69,6 +69,8 @@ function Collections({ data }) {
   const items = data.categories.map((category) => {
     const list = data.productsByCategory.get(category.id) ?? [];
     const from = list.length ? Math.min(...list.map((p) => p.price)) : 0;
+    const fromCurrency =
+      list.find((p) => p.price === from)?.currency ?? data.currency;
     const isClock = category.id === "clocks" || category.productType === "clock";
     const countStr = isClock
       ? plural(list.length, "clock", "clocks")
@@ -76,7 +78,7 @@ function Collections({ data }) {
     return {
       id: category.id,
       title: category.name,
-      subtitle: `${countStr} · from ${formatPrice(from, data.currency)}`,
+      subtitle: `${countStr} · from ${formatPrice(from, fromCurrency)}`,
       imageUrl: category.coverUrl,
       imagePosition: "25% 50%",
       href: `/collections/${category.id}`,
@@ -104,6 +106,7 @@ function Movements({ data }) {
   const counts = useMemo(() => {
     const map = new Map();
     for (const p of data.products) {
+      if (isUnverifiedSpec(p.specifications.movement)) continue;
       const movement = cleanSpec(p.specifications.movement);
       map.set(movement, (map.get(movement) ?? 0) + 1);
     }

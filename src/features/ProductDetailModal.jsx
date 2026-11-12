@@ -32,6 +32,8 @@ export default function ProductDetailModal({ product, category, onClose, trigger
   const closeRef = useRef(null);
   const triggerRef = useRef(triggerElement || null);
   const router = useRouter();
+  const onCloseRef = useRef(onClose);
+  onCloseRef.current = onClose;
 
   const cart = useCart();
   const wishlist = useWishlist();
@@ -69,6 +71,7 @@ export default function ProductDetailModal({ product, category, onClose, trigger
 
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    window.__lenis?.stop();
 
     // Focus close control on open
     closeRef.current?.focus();
@@ -76,7 +79,7 @@ export default function ProductDetailModal({ product, category, onClose, trigger
     const onKeyDown = (e) => {
       if (e.key === "Escape") {
         e.preventDefault();
-        onClose();
+        onCloseRef.current();
         return;
       }
 
@@ -112,6 +115,7 @@ export default function ProductDetailModal({ product, category, onClose, trigger
         rootEl.removeAttribute("inert");
       }
       document.body.style.overflow = prevOverflow;
+      window.__lenis?.start();
       document.removeEventListener("keydown", onKeyDown);
 
       // Restore focus to opener element
@@ -120,7 +124,7 @@ export default function ProductDetailModal({ product, category, onClose, trigger
         setTimeout(() => target.focus(), 0);
       }
     };
-  }, [onClose]);
+  }, []);
 
   if (!product || typeof document === "undefined") return null;
 
@@ -151,6 +155,7 @@ export default function ProductDetailModal({ product, category, onClose, trigger
   return createPortal(
     <div
       className="product-modal-backdrop"
+      data-lenis-prevent
       role="dialog"
       aria-modal="true"
       aria-labelledby="product-modal-title"

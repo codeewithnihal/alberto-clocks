@@ -801,8 +801,8 @@ code {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Center row for Chronograph (card 3) while keeping equal width */
-  .collections-layout>li:nth-child(3) {
+  /* Last card (Wall Clocks) sits alone, centered, at equal width */
+  .collections-layout>li:last-child:nth-child(odd) {
     grid-column: 1 / -1;
     justify-self: center;
     width: 100%;
@@ -2771,6 +2771,7 @@ body {
   max-height: calc(100vh - 2rem);
   max-height: calc(100dvh - 2rem);
   overflow-y: auto;
+  overscroll-behavior: contain;
   border: 1px solid var(--hair);
   border-radius: var(--radius);
   background: hsl(var(--card));

@@ -16,7 +16,7 @@ A responsive luxury watch and clock storefront for Alberto Watch Company. The si
 - **Home (`/`):** Hero section with interactive 3D Gold Diver timepiece, live catalog highlights, collection showcase, technology overview, and customer reviews.
 - **Collections (`/collections`):** Overview of seven categories (Luxury, Vintage, Chronograph, Smart, Women's, Sports, and Clocks) with responsive grid cards and distinct watch and clock counters.
 - **Collection (`/collections/:categoryId` and `/collections/all`):** Grid view of collection items with instant search, movement or clock-type filters, sorting, and responsive product cards.
-- **Clocks Collection (`/collections/clocks`):** Dedicated interior timepiece collection covering Wall Clocks, Desk Clocks, and Mantel Clocks with category-specific type filtering. Current clock entries represent proposed internal Alberto Watch Company models (draft pricing, estimated specifications, and vector placeholder graphics awaiting supplier verification).
+- **Clocks Collection (`/collections/clocks`):** The Wall Clocks section was updated and replaced with the new 12-model Alberto collection (`clock-001` to `clock-012`): eleven wall clocks and one compact brushed-brass desk clock (Model 03, listed as a Desk Clock because its source package describes it as a desk/table clock). Each model has five product views, a catalog SKU, and a price in Pakistani rupees (PKR); the clock type and mechanism filters work as before. Prices are suggested catalog prices, the imagery is AI-generated concept photography, and materials, dimensions, and movement are not yet confirmed, so verify them before publishing.
 - **Watch and Clock Detail Modal:** Selecting any timepiece or clock opens full specifications, high-resolution imagery, quantity selector, price, and Add to Cart / Wishlist actions in a focused popup modal. The background is dimmed and blurred, keyboard focus is trapped, and background content is disabled while the modal is open.
 - **Product Page (`/product/:id`):** Standalone watch page for direct external links, bookmarks, and search crawlers.
 - **Price List (`/price-list`):** Complete tabular price list with instant search, collection filtering, column sorting, and direct watch modal popup triggers.
@@ -103,6 +103,19 @@ node tools/tool.js [source_folder] [output_folder]
 - Copies original high-resolution watch images without loss.
 - Generates web-optimized WebP images: 1400 px large previews and 640 px card thumbnails via `sharp`.
 - Produces normalized product entries and specifications in `public/data/data.json`.
+
+### Clocks collection
+
+The Clocks collection is built separately from the Wall Clocks source package (the folder that holds `alberto_12_clock_models_catalog.json`, `alberto-wall-clocks-hero.webp`, and one `Alberto_Wall_Clock_Model_NN` folder per model):
+
+```bash
+node tools/make_clock_assets.js "path/to/wall clocks"
+```
+
+- Copies each model's original images to `public/images/products/clock-NNN/` (`1` to `5`), adding a 640 px `-sm.webp` thumbnail and a 1400 px `-md.webp` large view only where the original is wider.
+- Builds the collection cover from the hero image in `public/images/covers/` (`clocks.webp`, `clocks-md.webp`, `clocks-sm.webp`).
+- Replaces the `clocks` category and its 12 products in `public/data/data.json`; every other category and product is left untouched.
+- Clock prices are stored in PKR through each product's own `currency` field, while the watch catalog stays in USD. The category "from" prices and the checkout subtotal are shown per currency, so an order containing both watches and clocks lists a separate subtotal for each currency.
 
 ## Environment & Configuration
 
